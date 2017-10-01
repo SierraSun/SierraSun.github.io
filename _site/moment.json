@@ -1,0 +1,1221 @@
+{
+  "days" : [
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 555,
+      "pickupCount" : 31,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+
+      ],
+      "date" : "2017-09-26T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 71,
+      "pickupCount" : 15,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "Safari",
+          "onScreen" : 23
+        },
+        {
+          "appName" : "YouTube",
+          "onScreen" : 11
+        },
+        {
+          "appName" : "WeChat",
+          "onScreen" : 9
+        },
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 8
+        },
+        {
+          "appName" : "Wei b0",
+          "onScreen" : 6
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "EEWE",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "E13515 DE",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Google Maps",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "WEE",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 0
+        }
+      ],
+      "date" : "2017-09-25T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 78,
+      "pickupCount" : 1,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "Safari",
+          "onScreen" : 26
+        },
+        {
+          "appName" : "YouTube",
+          "onScreen" : 12
+        },
+        {
+          "appName" : "WeChat",
+          "onScreen" : 10
+        },
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 9
+        },
+        {
+          "appName" : "Wei b0",
+          "onScreen" : 6
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "EEWE",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "E13515 DE",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Google Maps",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "WEE",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 0
+        }
+      ],
+      "date" : "2017-09-24T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 162,
+      "pickupCount" : 17,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "Safari",
+          "onScreen" : 53
+        },
+        {
+          "appName" : "YouTube",
+          "onScreen" : 24
+        },
+        {
+          "appName" : "WeChat",
+          "onScreen" : 21
+        },
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 19
+        },
+        {
+          "appName" : "Wei b0",
+          "onScreen" : 13
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 8
+        },
+        {
+          "appName" : "EEWE",
+          "onScreen" : 6
+        },
+        {
+          "appName" : "E13515 DE",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Google Maps",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "WEE",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 0
+        }
+      ],
+      "date" : "2017-09-23T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 172,
+      "pickupCount" : 1,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "Safari",
+          "onScreen" : 57
+        },
+        {
+          "appName" : "YouTube",
+          "onScreen" : 26
+        },
+        {
+          "appName" : "WeChat",
+          "onScreen" : 23
+        },
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 20
+        },
+        {
+          "appName" : "Wei b0",
+          "onScreen" : 14
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 9
+        },
+        {
+          "appName" : "EEWE",
+          "onScreen" : 7
+        },
+        {
+          "appName" : "E13515 DE",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Google Maps",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "WEE",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 0
+        }
+      ],
+      "date" : "2017-09-22T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 175,
+      "pickupCount" : 25,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "Safari",
+          "onScreen" : 58
+        },
+        {
+          "appName" : "YouTube",
+          "onScreen" : 26
+        },
+        {
+          "appName" : "WeChat",
+          "onScreen" : 23
+        },
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 21
+        },
+        {
+          "appName" : "Wei b0",
+          "onScreen" : 14
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 9
+        },
+        {
+          "appName" : "EEWE",
+          "onScreen" : 7
+        },
+        {
+          "appName" : "E13515 DE",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Google Maps",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "WEE",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 0
+        }
+      ],
+      "date" : "2017-09-21T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 129,
+      "pickupCount" : 49,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "Safari",
+          "onScreen" : 42
+        },
+        {
+          "appName" : "YouTube",
+          "onScreen" : 19
+        },
+        {
+          "appName" : "WeChat",
+          "onScreen" : 17
+        },
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 15
+        },
+        {
+          "appName" : "Wei b0",
+          "onScreen" : 10
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 6
+        },
+        {
+          "appName" : "EEWE",
+          "onScreen" : 5
+        },
+        {
+          "appName" : "E13515 DE",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Google Maps",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "WEE",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 0
+        }
+      ],
+      "date" : "2017-09-20T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 543,
+      "pickupCount" : 27,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "WeChat",
+          "onScreen" : 48
+        },
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 44
+        },
+        {
+          "appName" : "Wei b0",
+          "onScreen" : 33
+        },
+        {
+          "appName" : "EEWE",
+          "onScreen" : 30
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 22
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 9
+        },
+        {
+          "appName" : "Maps",
+          "onScreen" : 8
+        },
+        {
+          "appName" : "ﬁﬁﬁﬁﬁ",
+          "onScreen" : 6
+        },
+        {
+          "appName" : "Google Maps",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "Voice Memos",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Messages",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Yelp",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Safari",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Meitu",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "E13515 DE",
+          "onScreen" : 1
+        }
+      ],
+      "date" : "2017-09-19T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 105,
+      "pickupCount" : 32,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "WeChat",
+          "onScreen" : 9
+        },
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 8
+        },
+        {
+          "appName" : "Wei b0",
+          "onScreen" : 6
+        },
+        {
+          "appName" : "EEWE",
+          "onScreen" : 6
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Maps",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "ﬁﬁﬁﬁﬁ",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Google Maps",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Voice Memos",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Messages",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Yelp",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Safari",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Meitu",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "E13515 DE",
+          "onScreen" : 0
+        }
+      ],
+      "date" : "2017-09-18T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 529,
+      "pickupCount" : 35,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "WeChat",
+          "onScreen" : 46
+        },
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 42
+        },
+        {
+          "appName" : "Wei b0",
+          "onScreen" : 32
+        },
+        {
+          "appName" : "EEWE",
+          "onScreen" : 29
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 21
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 9
+        },
+        {
+          "appName" : "Maps",
+          "onScreen" : 8
+        },
+        {
+          "appName" : "ﬁﬁﬁﬁﬁ",
+          "onScreen" : 6
+        },
+        {
+          "appName" : "Google Maps",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "Voice Memos",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Messages",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Yelp",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Safari",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Meitu",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "E13515 DE",
+          "onScreen" : 1
+        }
+      ],
+      "date" : "2017-09-17T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 327,
+      "pickupCount" : 88,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "WeChat",
+          "onScreen" : 59
+        },
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 53
+        },
+        {
+          "appName" : "Wei b0",
+          "onScreen" : 20
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 19
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 10
+        },
+        {
+          "appName" : "Maps",
+          "onScreen" : 8
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 6
+        },
+        {
+          "appName" : "$$IL§J§",
+          "onScreen" : 5
+        },
+        {
+          "appName" : "Settings",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "Messages",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Calculator",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "DealMoon",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "BofA",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Yelp",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Safari",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Meitu",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Blackboard",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Alipay",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Voice Memos",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Moment",
+          "onScreen" : 0
+        }
+      ],
+      "date" : "2017-09-16T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 489,
+      "pickupCount" : 33,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "WeChat",
+          "onScreen" : 88
+        },
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 79
+        },
+        {
+          "appName" : "Wei b0",
+          "onScreen" : 30
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 28
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 15
+        },
+        {
+          "appName" : "Maps",
+          "onScreen" : 12
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 9
+        },
+        {
+          "appName" : "$$IL§J§",
+          "onScreen" : 7
+        },
+        {
+          "appName" : "Settings",
+          "onScreen" : 6
+        },
+        {
+          "appName" : "Messages",
+          "onScreen" : 5
+        },
+        {
+          "appName" : "Calculator",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "DealMoon",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "BofA",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Yelp",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Safari",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Meitu",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Blackboard",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Alipay",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Voice Memos",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Moment",
+          "onScreen" : 0
+        }
+      ],
+      "date" : "2017-09-15T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 231,
+      "pickupCount" : 42,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 20
+        },
+        {
+          "appName" : "WeChat",
+          "onScreen" : 6
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Meitu",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Messages",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "$$Wﬁi",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "$$IL§J§",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 0
+        }
+      ],
+      "date" : "2017-09-14T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 166,
+      "pickupCount" : 61,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 15
+        },
+        {
+          "appName" : "WeChat",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Meitu",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Messages",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "$$Wﬁi",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "$$IL§J§",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 0
+        }
+      ],
+      "date" : "2017-09-13T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 349,
+      "pickupCount" : 40,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "WeChat",
+          "onScreen" : 49
+        },
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 19
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 15
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 7
+        },
+        {
+          "appName" : "Wei b0",
+          "onScreen" : 6
+        },
+        {
+          "appName" : "Maps",
+          "onScreen" : 5
+        },
+        {
+          "appName" : "$$IL§J§",
+          "onScreen" : 5
+        },
+        {
+          "appName" : "Safari",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Settings",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Amazon",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Calculator",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "DealMoon",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Blackboard",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "BofA",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Camera",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Facebook",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Alipay",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Twitter",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Uber",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Voice Memos",
+          "onScreen" : 0
+        }
+      ],
+      "date" : "2017-09-12T00:00:00-04:00"
+    },
+    {
+      "sessions" : [
+
+      ],
+      "minuteCount" : 2,
+      "pickupCount" : 1,
+      "pickups" : [
+
+      ],
+      "appUsages" : [
+        {
+          "appName" : "WeChat",
+          "onScreen" : 44
+        },
+        {
+          "appName" : "Home & Lock Screen",
+          "onScreen" : 17
+        },
+        {
+          "appName" : "Eﬁﬁﬁé‘“",
+          "onScreen" : 14
+        },
+        {
+          "appName" : "Gmail",
+          "onScreen" : 8
+        },
+        {
+          "appName" : "Wei b0",
+          "onScreen" : 8
+        },
+        {
+          "appName" : "Maps",
+          "onScreen" : 7
+        },
+        {
+          "appName" : "$$IL§J§",
+          "onScreen" : 5
+        },
+        {
+          "appName" : "Safari",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "QQEHB’PFE",
+          "onScreen" : 4
+        },
+        {
+          "appName" : "Calculator",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Mgﬁiﬁﬁﬁﬂ",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Settings",
+          "onScreen" : 3
+        },
+        {
+          "appName" : "Photos",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "BofA",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Blackboard",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Phone",
+          "onScreen" : 2
+        },
+        {
+          "appName" : "Amazon",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Camera",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Facebook",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Messages",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "EFIEiQ’éEﬁ",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Alipay",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Music",
+          "onScreen" : 1
+        },
+        {
+          "appName" : "Uber",
+          "onScreen" : 0
+        },
+        {
+          "appName" : "Voice Memos",
+          "onScreen" : 0
+        }
+      ],
+      "date" : "2017-09-11T00:00:00-04:00"
+    }
+  ]
+}
