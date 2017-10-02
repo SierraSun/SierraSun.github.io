@@ -1,69 +1,69 @@
-// ---
-//
-// ---
-//
-// $myredcolor: black;
-// $big-font-size:90px;
-//
-// @mixin fontstyle($myredcolor) {
-//   color: $myredcolor;
-// }
-//
-//
-// #background {
-//   background-position:top right;
-//   background-repeat: no-repeat;
-//   background-size: 30% 80%;
-//   background-image: url("background/background.png");
-//   margin-top: 10px;
-//   width:1100px;
-//   height:700px;
-//   left:0;
-// }
-//
-// body{
-//   font-family: 'Nunito Sans', sans-serif;
-//   font-size: 22px;
-//   font-weight:400;
-//   width: 758px;
-// }
-//
-// h1 {
-//   font-family: 'Nunito Sans', sans-serif;
-//   font-size: $big-font-size;
-//   font-weight: 200;
-//   margin-left: 20%;
-//   margin-right: 20%;
-//   margin-top: -75%;
-//   width:inherit;
-//   @include fontstyle($myredcolor);
-// }
-//
-// p {
-//   font-family: 'Nunito', sans-serif;
-//   font-size: 25px;
-//   font-weight: lighter;
-//   margin-left: 20%;
-//   margin-right: 5%;
-//   margin-top: -5%;
-//
-//   a{
-//     color: white;
-//     font-family: 'Nunito', sans-serif;
-//     font-size: 25px;
-//     font-style: normal;
-//     background-color: black;
-//     border-style:dashed;
-//     border-color: black;
-//     border-radius: 100px;
-//     text-decoration: none;
-//   }
-// }
-//
-//
-// a {
-//   color: ghostwhite;
-//   background-color: black;
-//   font-style: normal;
-//   text-decoration: none;
-// }
+---
+
+---
+
+$myredcolor: black;
+$big-font-size:90px;
+
+@mixin fontstyle($myredcolor) {
+  color: $myredcolor;
+}
+
+
+#background {
+  background-position:top right;
+  background-repeat: no-repeat;
+  background-size: 30% 80%;
+  background-image: url("background/background.png");
+  margin-top: 10px;
+  width:1100px;
+  height:700px;
+  left:0;
+}
+
+body{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 22px;
+  font-weight:400;
+  width: 758px;
+}
+
+h1 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: $big-font-size;
+  font-weight: 200;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: -75%;
+  width:inherit;
+  @include fontstyle($myredcolor);
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  margin-left: 20%;
+  margin-right: 5%;
+  margin-top: -5%;
+
+  a{
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    background-color: black;
+    border-style:dashed;
+    border-color: black;
+    border-radius: 100px;
+    text-decoration: none;
+  }
+}
+
+
+a {
+  color: ghostwhite;
+  background-color: black;
+  font-style: normal;
+  text-decoration: none;
+}
