@@ -1,0 +1,22 @@
+[
+  {
+    "country":"USA",
+    "value":10,
+    "color":"green"
+  },
+  {
+    "country":"China",
+    "value":20,
+    "color":"red"
+  },
+  {
+    "country":"British",
+    "value":30,
+    "color":"blue"
+  },
+  {
+    "country":"Irish",
+    "value":40,
+    "color":"pink"
+  }
+]
