@@ -21,17 +21,134 @@
       <div class="title-header">
     <h2 class="title-header-view" style="transform: translate3d(40%, 9px, 10px);">
       <span class="gradient-overlay"></span>
-      <span class="title" style="font-size: 85.53px;"><span class="auto-size-span" style="display:inline-block;">URBAN DATA VISUALIZATION</span></span>
-      <span class="subtitle" style="font-size: 21.3825px;"><span class="auto-size-span" style="display:inline-block;">STREET LIGHT &amp; HUB SYSTEM DATA</span></span>
+      <span class="title" style="font-size: 85.53px;"><span class="auto-size-span" style="display:inline-block;">TOP MOVIES</span></span>
+      <span class="subtitle" style="font-size: 21.3825px;"><span class="auto-size-span" style="display:inline-block;">RANK</span></span>
     </h2>
 </div>
+
 <div id="link">
-  <a href="https://spark.adobe.com/page/erc2IOfSoRTio/" target="_blank"> simple presentation </a>
+<a href="https://developers.themoviedb.org/3/search/search-movies" target="_blank"> database </a>
 </div>
 
-<div id="picture1">
-  <img src="pictures/Oct-23-2017 14-05-42.gif" width="800px">
+<div>
+  <img src="pictures/WX20171030-143023@2x.png" style="width:1000px; margin-left:15%;">
+  <img src="pictures/WX20171030-144304@2x.png" style="width:1000px; margin-left:15%;">
 </div>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+
+<script>
+//top rated movie
+
+var url = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=1";
+
+d3.json(url, function(error, data) {
+  console.log(data);
+});
+
+var url2 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=2";
+
+d3.json(url2, function(error, data) {
+  console.log(data);
+});
+
+var url3 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=3";
+
+d3.json(url3, function(error, data) {
+  console.log(data);
+});
+
+var url4 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=4";
+
+d3.json(url4, function(error, data) {
+  console.log(data);
+});
+
+var url5 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=5";
+
+d3.json(url5, function(error, data) {
+  console.log(data);
+});
+
+var url6 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=6";
+
+d3.json(url6, function(error, data) {
+  console.log(data);
+});
+
+var url7 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=7";
+
+d3.json(url7, function(error, data) {
+  console.log(data);
+});
+
+var url8 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=8";
+
+d3.json(url8, function(error, data) {
+  console.log(data);
+});
+
+// top popular
+
+var url="https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=1"
+
+d3.json(url, function(error, data) {
+  console.log(data);
+});
+
+var url2 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=2";
+
+d3.json(url2, function(error, data) {
+  console.log(data);
+});
+
+var url3 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=3";
+
+d3.json(url3, function(error, data) {
+  console.log(data);
+});
+
+var url4 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=4";
+
+d3.json(url4, function(error, data) {
+  console.log(data);
+});
+
+var url5 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=5";
+
+d3.json(url5, function(error, data) {
+  console.log(data);
+});
+
+var url6 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=6";
+
+d3.json(url6, function(error, data) {
+  console.log(data);
+});
+
+var url7 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=7";
+
+d3.json(url7, function(error, data) {
+  console.log(data);
+});
+
+var url8 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=8";
+
+d3.json(url8, function(error, data) {
+  console.log(data);
+});
+
+//details
+
+var url1 = "https://api.themoviedb.org/3/movie/120467?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US";
+
+d3.json(url1, function(error, data) {
+  console.log(data);
+});
+
+</script>
 
 
   </body>

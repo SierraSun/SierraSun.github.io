@@ -1,27 +1,24 @@
----
-layout: default
-title: Final project idea
----
-<div class="title-header">
-    <h2 class="title-header-view" style="transform: translate3d(40%, 9px, 10px);">
-      <span class="gradient-overlay"></span>
-      <span class="title" style="font-size: 85.53px;"><span class="auto-size-span" style="display:inline-block;">TOP MOVIES</span></span>
-      <span class="subtitle" style="font-size: 21.3825px;"><span class="auto-size-span" style="display:inline-block;">RANK</span></span>
-    </h2>
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<div id="link">
-<a href="https://developers.themoviedb.org/3/search/search-movies" target="_blank"> database </a>
-</div>
+    <title> My Website  - D3 </title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/svg style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans" rel="stylesheet">
+  </head>
 
-<div>
-  <img src="pictures/WX20171030-143023@2x.png" style="width:1000px; margin-left:15%;">
-  <img src="pictures/WX20171030-144304@2x.png" style="width:1000px; margin-left:15%;">
-</div>
-
-<script src="https://d3js.org/d3.v4.min.js"></script>
+  <body>
+    <a href="index.html">Homepage</a>
+    <a href="SVG homework.html">SVG homework</a>
+    <a href="Javascript homework.html">Javascript homework</a>
+    <a href="d3.html">D3</a>
+    <a href="final project idea.html">final project idea</a>
 
 
+      <script src="https://d3js.org/d3.v4.min.js"></script>
 
 <script>
 //top rated movie
@@ -124,12 +121,8 @@ d3.json(url8, function(error, data) {
   console.log(data);
 });
 
-//details
-
-var url1 = "https://api.themoviedb.org/3/movie/120467?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US";
-
-d3.json(url1, function(error, data) {
-  console.log(data);
-});
-
 </script>
+
+
+  </body>
+  </html>

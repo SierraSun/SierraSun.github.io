@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title> My Website  - test </title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/svg style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans" rel="stylesheet">
+  </head>
+
+  <body>
+    <a href="index.html">Homepage</a>
+    <a href="SVG homework.html">SVG homework</a>
+    <a href="Javascript homework.html">Javascript homework</a>
+    <a href="d3.html">D3</a>
+    <a href="final project idea.html">final project idea</a>
+
+
+      <svg id="mysvg"></svg>
+
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+  d3.select ("body").style("margin","0px");
+
+  var margin =100;
+
+  var svg=d3.select ("#mysvg")
+   .style("background-color","gray")
+   .attr("width", window.innerWidth - margin *2)
+   .attr("height", window.innerHeight- margin *2)
+   .attr("transform","translate(" + margin + ", " + margin + ")");
+
+  var data = [0.2,3.2,2.7,4.7];
+  var xScale = d3.scaleLinear()
+    .domain([0,5]) //contain all the data
+    .range([margin, window.innerWidth-margin]); //output
+
+  var yScale = d3.scaleLinear()
+    .domain([0, data.length - 1])
+    .range([margin, window.innerHeight-margin]);
+
+  var circles = svg.selectAll("circle")
+    .data(data)
+
+  circles.enter().append("circle")
+    .attr("fill","white")
+    .attr("r", 10)
+    .attr("cy", function(d,i){
+      return yScale(i);
+    })
+    .attr("cx", function(d){
+      return xScale(d);
+    })
+    .on("mouseover",function(d,i){
+      d3.select("#popup")
+       .style("display","block")
+       .style("position","absolute")
+       .style("left", xScale(d) + "px")
+       .style("top", yScale(i) + "px")
+       .text(d);
+    })
+    .on("mouseout",function(){
+      d3.select("#popup")
+        .style("display","none");
+    });
+
+    var axes = d3.axisBottom(xScale);
+
+    svg.append("g")
+     .attr("transform", "translete(0,"+(window.innerHeight-margin/2)+")")
+     .call(axes);
+
+</script>
+
+
+  </body>
+  </html>
