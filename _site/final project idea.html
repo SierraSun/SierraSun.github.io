@@ -15,7 +15,7 @@
     <a href="SVG homework.html">SVG homework</a>
     <a href="Javascript homework.html">Javascript homework</a>
     <a href="d3.html">D3</a>
-    <a href="final project idea.html">final project idea</a>
+    <a href="final project.html">final project</a>
 
 
       <div class="title-header">
@@ -40,116 +40,67 @@
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
-
-
 <script>
 //top rated movie
+var q = d3.queue()
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=1")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=2")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=3")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=3")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=4")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=5")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=6")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=7")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=8")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=9")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=10")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=11")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=12")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=13")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=14")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=15")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=16")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=17")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=18")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=19")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=20")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=21")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=22")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=23")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=24")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=25")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=26")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=27")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=28")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=29")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=30")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=31")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=32")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=33")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=34")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=35")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=36")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=37")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=38")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=39")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=40")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=41")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=42")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=43")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=44")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=45")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=46")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=47")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=48")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=49")
+  .awaitAll(function(error, data) {
+      if (error) throw error;
+      var finaldata = d3.merge(data.map(function(d) {
+        return d.results;
+      }));
+      console.log(finaldata);
+    });
 
-var url = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=1";
-
-d3.json(url, function(error, data) {
-  console.log(data);
-});
-
-var url2 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=2";
-
-d3.json(url2, function(error, data) {
-  console.log(data);
-});
-
-var url3 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=3";
-
-d3.json(url3, function(error, data) {
-  console.log(data);
-});
-
-var url4 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=4";
-
-d3.json(url4, function(error, data) {
-  console.log(data);
-});
-
-var url5 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=5";
-
-d3.json(url5, function(error, data) {
-  console.log(data);
-});
-
-var url6 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=6";
-
-d3.json(url6, function(error, data) {
-  console.log(data);
-});
-
-var url7 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=7";
-
-d3.json(url7, function(error, data) {
-  console.log(data);
-});
-
-var url8 = "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=8";
-
-d3.json(url8, function(error, data) {
-  console.log(data);
-});
-
-// top popular
-
-var url="https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=1"
-
-d3.json(url, function(error, data) {
-  console.log(data);
-});
-
-var url2 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=2";
-
-d3.json(url2, function(error, data) {
-  console.log(data);
-});
-
-var url3 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=3";
-
-d3.json(url3, function(error, data) {
-  console.log(data);
-});
-
-var url4 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=4";
-
-d3.json(url4, function(error, data) {
-  console.log(data);
-});
-
-var url5 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=5";
-
-d3.json(url5, function(error, data) {
-  console.log(data);
-});
-
-var url6 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=6";
-
-d3.json(url6, function(error, data) {
-  console.log(data);
-});
-
-var url7 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=7";
-
-d3.json(url7, function(error, data) {
-  console.log(data);
-});
-
-var url8 = "https://api.themoviedb.org/3/movie/popular?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=8";
-
-d3.json(url8, function(error, data) {
-  console.log(data);
-});
-
-//details
-
-var url1 = "https://api.themoviedb.org/3/movie/120467?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US";
-
-d3.json(url1, function(error, data) {
-  console.log(data);
-});
 
 </script>
 

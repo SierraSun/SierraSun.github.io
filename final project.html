@@ -1,0 +1,343 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Game Box  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+
+<script src="js/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+	 <!--banner-info-->
+	 <div class="banner-info">
+		  <div class="container">
+			  <div class="logo">
+					 <h1><a href="index.html">TOP RANK MOVIES</a></h1>
+           <h2>Find your interests</h2>
+			  </div>
+			 <div class="top-menu">
+				 <span class="menu"></span>
+					<ul class="nav1">
+						 <li class="active"><a href="final project.html">Home</a></li>
+						 <li><a href="index.html">About Author</a></li>
+						 <li><a href="gallery.html">Movie Gallery</a></li>
+				  </ul>
+			 </div>
+	 <!-- script-for-menu -->
+						<script>
+							 $( "span.menu" ).click(function() {
+							$( "ul.nav1" ).slideToggle( 300, function() {
+							// Animation complete.
+								});
+								});
+						</script>
+					<!-- /script-for-menu -->
+
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>
+<!-- banner -->
+	 <!-- Slider-starts-Here -->
+	 <script src="js/responsiveslides.min.js"></script>
+	 <script>
+		$(function () {
+		  $("#slider").responsiveSlides({
+			auto:true,
+			nav: false,
+			speed: 500,
+			namespace: "callbacks",
+			pager:true,
+		  });
+		});
+
+	   </script>
+
+	 <div class="slider">
+		  <div class="callbacks_container">
+			  <ul class="rslides" id="slider">
+
+					<div class="slid banner1">
+						  <div class="caption">
+								<h3>The Shawshank Redemption</h3>
+								<p>Framed in the 1940s for the double murder of his wife and her lover, upstanding banker Andy Dufresne begins a new life at the Shawshank prison, where he puts his accounting skills to work for an amoral warden. During his long stretch in prison, Dufresne comes to be admired by the other inmates -- including an older prisoner named Red -- for his integrity and unquenchable sense of hope.</p>
+						  </div>
+					</div>
+
+
+					 <div class="slid banner2">
+						  <div class="caption">
+								<h3>Your Name</h3>
+								<p>High schoolers Mitsuha and Taki are complete strangers living separate lives. But one night, they suddenly switch places. Mitsuha wakes up in Taki’s body, and he in hers. This bizarre occurrence continues to happen randomly, and the two must adjust their lives around each other.</p>
+						  </div>
+					 </div>
+
+
+					<div class="slid banner3">
+						<div class="caption">
+							<h3>The Godfather</h3>
+							<p>Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.</p>
+						</div>
+					</div>
+
+			  </ul>
+		 </div>
+	 </div>
+
+<!-- content -->
+<div class="content">
+	 <div class="container">
+		 <div class="vote-avarage">
+			 <h3>Vote Avarage</h3>
+			 <span> </span>
+       <svg id="mysvg" style="margin-top:30px;margin-bottom:30px"></svg>
+
+       <script src="https://d3js.org/d3.v4.min.js"></script>
+       <script>
+       d3.select ("body").style("margin","0px");
+
+       var margin =100;
+
+       var svg=d3.select ("#mysvg")
+        .style("background-color","ghost-white")
+        .attr("width", window.innerWidth - margin*1.3)
+        .attr("height",window.innerHeight - margin)
+
+
+        </script>
+
+
+	 </div>
+</div>
+<!-- latest -->
+<div class="latest">
+	 <div class="container">
+		 <div class="latest-games">
+			 <h3>Popularity of movies</h3>
+			 <span></span>
+		 </div>
+		 <div class="latest-top">
+				<div class="col-md-5 trailer-text">
+				   <div class="sub-trailer">
+				       <div class="col-md-4 sub-img">
+							<img src="images/MV5BNWNmZmFjNmEtNTg2OS00MTlkLTg5OGYtM2I5YmQ4ZDQxMjZkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNzAxNDU5Mzk@._CR13,315,1375,1375_UX402_UY402._SY201_SX201_AL_.jpg" alt="img01"/>
+					   </div>
+					   <div class="col-md-8 sub-text">
+					   		 <a href="#">IT: premiered in Los Angeles on September 5, 2017</a>
+							 <p>2017 American supernatural horror filmdirected by Andy Muschietti...</p>
+					   </div>
+					    <div class="clearfix"> </div>
+				   </div>
+				    <div class="sub-trailer">
+				       <div class="col-md-4 sub-img">
+							<img src="images/Thor 2018 calendar.jpg" alt="img02"/>
+					   </div>
+					   <div class="col-md-8 sub-text">
+					   		 <a href="#"> Thor: Ragnarok has grossed more than $427 million worldwide.</a>
+							 <p>Thor: Ragnarok is a 2017 American superhero film based on the Marvel Comics character Thor...</p>
+					   </div>
+					    <div class="clearfix"> </div>
+				   </div>
+				    <div class="sub-trailer">
+				       <div class="col-md-4 sub-img">
+							<img src="images/minions-blog-article-square.jpg" alt="img03"/>
+					   </div>
+					   <div class="col-md-8 sub-text">
+					   		 <a href="#">Minions: A sequel is scheduled to be released on July 3, 2020.</a>
+							 <p>Minions is a 2015 American computer-animated comedy film...</p>
+					   </div>
+					    <div class="clearfix"> </div>
+				   </div>
+				</div>
+				<div class="chart2">
+          <svg id="mysvg2" style="margin-top:30px;margin-bottom:30px"></svg>
+
+          <script src="https://d3js.org/d3.v4.min.js"></script>
+          <script>
+          d3.select ("body").style("margin","0px");
+
+          var margin =400;
+
+          var svg=d3.select ("#mysvg2")
+           .style("background-color","ghost-white")
+           .attr("width", window.innerWidth - margin*1.6)
+           .attr("height",window.innerHeight - margin*0.6 )
+
+           </script>
+				</div>
+			</div>
+	 </div>
+</div>
+<!-- poster -->
+<div class="container">
+		<div class="poster-info">
+			 <h3>Distribution of movies</h3>
+
+			 <div class="chart3">
+				 <svg id="mysvg3" style="margin-top:30px;margin-bottom:30px"></svg>
+
+				 <script src="https://d3js.org/d3.v4.min.js"></script>
+				 <script>
+				 d3.select ("body").style("margin","0px");
+
+				 var margin =150;
+
+				 var svg=d3.select ("#mysvg3")
+					.style("background-color","#2B3856")
+					.attr("width", window.innerWidth - margin)
+					.attr("height",window.innerHeight-margin*0.2)
+					.attr("margin-left","0px")
+					.attr("transform","translate(" - margin - ", " + margin + ")");
+
+					</script>
+					<p>Film distribution is the process through which a film is made available for viewing by an audience. This is normally the task of a professional film distributor, who would determine the marketing strategy of the film, the media by which a film is to be exhibited or made available for viewing, and may set the release date and other matters. The film may be exhibited directly to the public either through a movie theater (historically the main way films were distributed) or television for personal home viewing (including on DVD-Video or Blu-ray Disc, video-on-demand, online downloading, television programs through broadcast syndication etc.). Other ways of distributing a film include rental or personal purchase of the film in a variety of media and formats, such as VHS tape or DVD, or Internet downloading of streaming using a computer.</p>
+		   </div>
+
+
+		 </div>
+	 </div>
+</div>
+<!-- x-box -->
+<div class="x-box">
+	 <div class="container">
+		 <div class="x-box_sec">
+			 <div class="poster"></div>
+			 <div class="col-md-7 x-box-left">
+				 <h2>Top10 movie of 2017 <span>Introduce</span></h2>
+				 <h3>Detail information of movies.</h3>
+				 <div class="top-movie">
+				 	 <div class="movie1">
+				 			 <div class="movie1-img" style="margin-top:30px">
+				 			<img src="images/MV5BNWNmZmFjNmEtNTg2OS00MTlkLTg5OGYtM2I5YmQ4ZDQxMjZkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNzAxNDU5Mzk@._CR13,315,1375,1375_UX402_UY402._SY201_SX201_AL_.jpg" alt="img01"/>
+				 		 </div>
+						 <div class="link">
+								 <a class="hvr-bounce-to-top" href="http://www.imdb.com/title/tt1396484/" >Read More</a>
+							</div>
+				 		 <div class="movie1-text" style="margin-left:230px;margin-top:-200px">
+				 			<h3> IT </h3>
+				 			 <p>In the Town of Derry, the local kids are disappearing one by one, leaving behind bloody remains. In a place known as 'The Barrens', a group of seven kids are united by their horrifying and strange encounters with an evil clown and their determination to kill It.</p>
+							 <div class="col-md-7 x-box-right">
+							 	<div class="top-movie">
+							 		<div class="movie1">
+							 				<div class="movie1-video" >
+							 			 <iframe width="440px" height="210px" src="https://www.youtube.com/embed/xKJmEC5ieOk" frameborder="0" allowfullscreen"" style="margin-left:430px; margin-top:-1300px;"></iframe>
+							 			</div>
+							 		</div>
+								</div>
+				 	</div>
+        </div>
+						 <div class="movie2">
+									<div class="movie2-img" style="margin-top:30px">
+								 <img src="images/Thor 2018 calendar.jpg" width="201"/>
+								</div>
+								<div class="link">
+	 								 <a class="hvr-bounce-to-top" href="http://www.imdb.com/title/tt3501632/" >Read More</a>
+	 							</div>
+								<div class="movie2-text" style="margin-left:230px;margin-top:-200px">
+								 <h3> Thor: Ragnarok </h3>
+									<p>Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela.</p>
+									<div class="movie2">
+										<div class="movie2-video" >
+									 <iframe width="440px" height="210px" src="https://www.youtube.com/embed/H84al-zYhq8" frameborder="0" allowfullscreen"" style="margin-left:444px; margin-top:-1400px;"></iframe>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+
+
+					 </div>
+
+
+
+
+
+
+
+		 </div>
+	 </div>
+</div>
+
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<script>
+//top rated movie
+var q = d3.queue()
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=1")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=2")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=3")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=3")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=4")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=5")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=6")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=7")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=8")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=9")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=10")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=11")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=12")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=13")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=14")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=15")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=16")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=17")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=18")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=19")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=20")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=21")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=22")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=23")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=24")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=25")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=26")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=27")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=28")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=29")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=30")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=31")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=32")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=33")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=34")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=35")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=36")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=37")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=38")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=39")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=40")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=41")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=42")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=43")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=44")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=45")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=46")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=47")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=48")
+  .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=49")
+  .awaitAll(function(error, data) {
+      if (error) throw error;
+      var finaldata = d3.merge(data.map(function(d) {
+        return d.results;
+      }));
+      console.log(finaldata);
+    });
+
+
+</script>
+</html>

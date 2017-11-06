@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title> My Website  - D3 </title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/svg style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito|Nunito+Sans" rel="stylesheet">
+  </head>
+
+  <body>
+    <a href="index.html">Homepage</a>
+    <a href="SVG homework.html">SVG homework</a>
+    <a href="Javascript homework.html">Javascript homework</a>
+    <a href="d3.html">D3</a>
+    <a href="final project.html">final project</a>
+
+
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+
+<script>
+
+  d3.queue()
+   .defer(d3.json, "json/moment.json")
+   .defer(d3.json, "json/data.json")
+   .awaitAll(function(error, data) {
+      var momentData = data[0];
+
+        momentData.forEach(function(d,i){
+        console.log(i,d);
+      });
+
+
+    });
+
+
+
+</script>
+
+
+  </body>
+  </html>
