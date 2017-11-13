@@ -20,7 +20,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		  <div class="container">
 			  <div class="logo">
 					 <h1><a href="index.html">TOP RANK MOVIES</a></h1>
-           <h2>Find your interests</h2>
 			  </div>
 			 <div class="top-menu">
 				 <span class="menu"></span>
@@ -111,6 +110,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         .attr("height",window.innerHeight - margin)
 
 
+
         </script>
 
 
@@ -156,20 +156,131 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					    <div class="clearfix"> </div>
 				   </div>
 				</div>
+			</div>
 				<div class="chart2">
-          <svg id="mysvg2" style="margin-top:30px;margin-bottom:30px"></svg>
+        <svg width="960" height="500"></svg>
+					<style>
+
+					.axis path,
+					.axis line {
+					  fill: none;
+					  stroke: #000;
+					  shape-rendering: crispEdges;
+					}
+
+					.dot {
+					  fill: steelblue;
+					  stroke: #000;
+					}
+
+					.dot:hover {
+					  fill: red;
+					}
+
+					div.tooltip {
+					  position: absolute;
+					  text-align: center;
+					  vertical-align: top;
+					  width: 100px;
+					  height: 25px;
+					  padding: 5px;
+					  color: #000000;
+					  font-size: 12px;
+					  font-weight: bold;
+					  line-height: 50%;
+					  background: #FFF;
+					  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);
+					  border: 2px;
+					  border-radius: 2px;
+					  pointer-events: none;
+					}
+
+					</style>
 
           <script src="https://d3js.org/d3.v4.min.js"></script>
           <script>
           d3.select ("body").style("margin","0px");
 
-          var margin =400;
+					 var svg = d3.select("svg"),
+					 		margin = {top: 10, right: 100, bottom: 60, left: 100},
+					 		width = +svg.attr("width") - margin.left - margin.right,
+					 		height = +svg.attr("height") - margin.top - margin.bottom;
 
-          var svg=d3.select ("#mysvg2")
-           .style("background-color","ghost-white")
-           .attr("width", window.innerWidth - margin*1.6)
-           .attr("height",window.innerHeight - margin*0.6 )
 
+					 var x = d3.scaleTime().rangeRound([0, width]),
+					 		y = d3.scaleLinear().rangeRound([height, 0]);
+
+
+					 var g = svg.append("g")
+					 		.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+
+					 d3.json("https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=1", function(error, data) {
+					 	if (error) console.log(error);
+
+
+					 	popularity = data.results.map(function(d) { return d.popularity; });
+					 	release_date = data.results.map(function(d) { return d.release_date; });
+
+
+					 	x.domain(d3.extent(data, function(d){ return d.release_date;}));
+					 	y.domain([0,d3.max(data,function(d){ return d.popularity})]);
+
+					 	var xScale = d3.scaleTime()
+					 	 .range([0, width]);
+
+					  var yScale = d3.scaleLinear()
+					 	 .range([height, 0]);
+
+					 	g.append("g")
+					 		.attr("class", "axis axis--x")
+					 		.attr("transform", "translate(0," + height + ")")
+					 		.call(d3.axisBottom(x).scale(xScale));
+
+
+					 	g.append("text")
+					 		.attr("transform", "translate(" + (width/2) + " ," + (height + margin.top + 20) + ")")
+					 		.style("text-anchor", "middle")
+					 		.style("font-size", "15px")
+					 		.text("Releasetime");
+
+					 	g.append("g")
+					 		.attr("class", "axis axis--y")
+					 		.call(d3.axisLeft(y).scale(yScale));
+
+
+					 	g.append("text")
+					 		.attr("transform", "rotate(-90)")
+					 		.attr("y", 0 - margin.left)
+					 		.attr("x", 0 - (height / 2))
+					 		.attr("dy", ".75em")
+					 		.style("text-anchor", "middle")
+					 		.style("font-size", "15px")
+					 		.text("Popularity");
+
+					 	g.selectAll(".dot")
+					 		.data(data.results)
+					 		.enter().append("circle")
+					 			.attr("class", "dot")
+					 			.attr("r", 4)
+					 			.attr("cx", function(d) { return x(d.release_date); })
+					 			.attr("cy", function(d) { return y(d.popularity); })
+					 			.on("mouseover", function(d) {
+					 				div.transition()
+					 					.duration(200)
+					 					.style("opacity", .9)
+					 					.style("stroke", "black");
+					 				div.html("<b><u>Pop</b></u>: " + d.popularity + "<br/>" + "<br/>" + "<br/>" + "<b><u>Date</b></u>: " + d.release_date)
+					 					.style("left", (d3.event.pageX + 10) + "px")
+					 					.style("top", (d3.event.pageY - 30) + "px");
+					 			})
+					 			.on("mouseout", function(d) {
+					 				div.transition()
+					 					.duration(500)
+					 					.style("opacity", 0);
+					 			});
+
+					 });
            </script>
 				</div>
 			</div>
@@ -180,24 +291,118 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="poster-info">
 			 <h3>Distribution of movies</h3>
 
-			 <div class="chart3">
+			 <div class="chart3" sytle="margin-right:100px;">
 				 <svg id="mysvg3" style="margin-top:30px;margin-bottom:30px"></svg>
 
 				 <script src="https://d3js.org/d3.v4.min.js"></script>
+				 <script src="https://unpkg.com/topojson@3"></script>
+
 				 <script>
 				 d3.select ("body").style("margin","0px");
 
 				 var margin =150;
 
 				 var svg=d3.select ("#mysvg3")
-					.style("background-color","#2B3856")
+					.style("background-color","white")
 					.attr("width", window.innerWidth - margin)
 					.attr("height",window.innerHeight-margin*0.2)
 					.attr("margin-left","0px")
 					.attr("transform","translate(" - margin - ", " + margin + ")");
 
+				d3.json("json/world.json", function(error, data) {
+
+					var geoJSON = topojson.feature(data, data.objects.countries);
+
+					console.log(geoJSON);
+
+					var proj = d3.geoOrthographic()
+					  .fitSize([window.innerWidth - margin, window.innerHeight-margin*0.2], geoJSON);
+					var path = d3.geoPath()
+					  .projection(proj);
+
+				  var countries = svg.selectAll("path")
+					  .data(geoJSON.features);
+
+					countries = countries.enter().append("path")
+					  .attr("d", function(d) {
+					    return path(d);
+					  })
+						.attr("id", function(d){
+							return d.id;
+						})
+					  .attr("fill",function(d){
+							if (d.id == "US"){
+								return"#800000";
+							}
+							else if(d.id == "IN"){
+								return "#330000";
+							}
+							else if(d.id == "JP"){
+								return "#ff0000";
+							}
+							else if(d.id == "FR"){
+								return "#ff3333";
+							}
+							else if(d.id == "CA"){
+								return "#ff4d4d";
+							}
+							else if(d.id == "DE"){
+								return "#ff6666";
+							}
+							else if(d.id == "KP"){
+								return "#ff6666";
+							}
+							else if(d.id == "CN"){
+								return "#ff9999";
+							}
+							else if(d.id == "RU"){
+								return "#ff8080";
+							}
+							else if(d.id == "ES"){
+								return "#ffcccc";
+							}
+							else {
+								return "lightgray";
+							}
+						});
+
+					// var points = [
+					//       {"name": "Boston", "coords": [-71.0589, 42.3601]},
+					//       {"name": "London", "coords": [-0.1278, 51.5074]}
+					//     ];
+          //
+					// var points = svg.selectAll("circle")
+					//     .data(points);
+          //
+					// points.enter().append("circle")
+					//     .attr("transform", function(d){
+					//         return "translate(" + proj(d.coords) + ")";
+					//       })
+					//     .attr("fill","red")
+					//     .attr("r","10px")
+
+
+						var speed = 0.01,
+								start = Date.now();
+
+						d3.timer(function() {
+							proj.rotate([speed * (Date.now() - start), -15]);
+							countries
+							  .attr("d", function(d) {
+							    return path(d);
+							  })
+						});
+
+					});
+
+
 					</script>
 					<p>Film distribution is the process through which a film is made available for viewing by an audience. This is normally the task of a professional film distributor, who would determine the marketing strategy of the film, the media by which a film is to be exhibited or made available for viewing, and may set the release date and other matters. The film may be exhibited directly to the public either through a movie theater (historically the main way films were distributed) or television for personal home viewing (including on DVD-Video or Blu-ray Disc, video-on-demand, online downloading, television programs through broadcast syndication etc.). Other ways of distributing a film include rental or personal purchase of the film in a variety of media and formats, such as VHS tape or DVD, or Internet downloading of streaming using a computer.</p>
+					<style>
+					p{
+						width: inherit;
+					}
+					</style>
 		   </div>
 
 
@@ -257,18 +462,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 			</div>
 
-
-
-
-
-
-					 </div>
-
-
-
-
-
-
+		</div>
 
 		 </div>
 	 </div>

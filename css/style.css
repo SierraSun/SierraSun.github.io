@@ -283,6 +283,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 .game-grid img{
 
 }
+
  /*-- latest --*/
 .latest{
 	padding-bottom:4em;
@@ -485,6 +486,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 	font-size:0.9em;
 	margin-right:-31em;
 	text-align: justify;
+
 }
 .bnr2 {
   background: url(../images/bnr3.jpg) no-repeat 0px 0px;
@@ -1456,7 +1458,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   min-height: 99px;
 }
 .caption {
- margin-top:10em;
+ margin-top:13em;
 }
 .top-games h3, .latest-games h3 {
   font-size: 2em;
@@ -1685,7 +1687,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   min-height: 99px;
 }
 .caption {
- margin-top:10em;
+ margin-top:13em;
 }
 .top-games h3, .latest-games h3 {
   font-size: 2em;
@@ -1913,7 +1915,7 @@ ul.callbacks_tabs.callbacks1_tabs {
   left: 43%;
 }
 .caption {
-  margin-top:9em;
+  margin-top:13em;
 }
 .headr-left {
   width: 46%;
@@ -2122,7 +2124,7 @@ span.menu {
   min-height: 300px;
 }
 .caption {
-  margin-top: 7em;
+  margin-top: 13em;
 }
 .caption h3 {
   font-size: 1.2em;

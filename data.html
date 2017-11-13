@@ -1,24 +1,145 @@
----
-layout: default
-title: D3
----
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
 
-<script src="https://d3js.org/d3.v4.min.js"></script>
+body {
+  font: 10px sans-serif;
+}
 
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  fill: steelblue;
+  stroke: #000;
+}
+
+.dot:hover {
+  fill: red;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  vertical-align: top;
+  width: 100px;
+  height: 25px;
+  padding: 5px;
+  color: #000000;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 50%;
+  background: #FFF;
+  box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.4);
+  border: 2px;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+</style>
+<body>
+<svg width="960" height="500"></svg>
+<script src="//d3js.org/d3.v4.min.js"></script>
 <script>
 
-  d3.queue()
-   .defer(d3.json, "json/moment.json")
-   .defer(d3.json, "json/data.json")
-   .awaitAll(function(error, data) {
-      var momentData = data[0];
+// Define the tooltip for hover-over info windows
+var div = d3.select("body").append("div")
+  	.attr("class", "tooltip")
+  	.style("opacity", 0);
 
-        momentData.forEach(function(d,i){
-        console.log(i,d);
+// Set the dimensions and margins of the graph
+var svg = d3.select("svg"),
+    margin = {top: 20, right: 20, bottom: 60, left: 60},
+    width = +svg.attr("width") - margin.left - margin.right,
+    height = +svg.attr("height") - margin.top - margin.bottom;
+
+// Set the ranges
+var x = d3.scaleTime().rangeRound([0, width]),
+    y = d3.scaleLinear().rangeRound([height, 0]);
+
+// Append the SVG element with a g element
+// to offset the origin of the chart area by
+// the top-left margin
+var g = svg.append("g")
+    .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+// USGS Real-Time Earthquake Feed
+// Create the scatterplot with the USGS data
+d3.json("https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=1", function(error, data) {
+  if (error) console.log(error);
+
+  // Filter and format the data for use in the range
+  popularity = data.results.map(function(d) { return d.popularity; });
+  release_date = data.results.map(function(d) { return d.release_date; });
+
+  // Scale the range of the data from the minimum value
+  // to the maximum value
+  x.domain(d3.extent(data, function(d){ return d.release_date;}));
+  y.domain([0,d3.max(data,function(d){ return d.popularity})]);
+
+
+  // Add the X-Axis
+  var xScale = d3.scaleTime()
+		.range([0, width]);
+
+	var yScale = d3.scaleLinear()
+		.range([height, 0]);
+
+  g.append("g")
+    .attr("class", "axis axis--x")
+    .attr("transform", "translate(0," + height + ")")
+    .call(d3.axisBottom(x).scale(xScale));
+
+  // Add a label for the X-Axis
+  g.append("text")
+    .attr("transform", "translate(" + (width/2) + " ," + (height + margin.top + 20) + ")")
+    .style("text-anchor", "middle")
+    .style("font-size", "15px")
+    .text("Releasetime");
+
+  // Add the Y-Axis
+  g.append("g")
+    .attr("class", "axis axis--y")
+    .call(d3.axisLeft(y).scale(yScale));
+
+  // Add a label for the Y-Axis
+  g.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", 0 - margin.left)
+    .attr("x", 0 - (height / 2))
+    .attr("dy", ".75em")
+    .style("text-anchor", "middle")
+    .style("font-size", "15px")
+    .text("Popularity");
+
+  // Add the dots to the scatterplot with the tooltip
+  g.selectAll(".dot")
+    .data(data.results)
+    .enter().append("circle")
+      .attr("class", "dot")
+      .attr("r", 4)
+      .attr("cx", function(d) { return x(d.release_date); })
+      .attr("cy", function(d) { return y(d.popularity); })
+      .on("mouseover", function(d) {
+        div.transition()
+          .duration(200)
+          .style("opacity", .9)
+          .style("stroke", "black");
+        div.html("<b><u>Pop</b></u>: " + d.popularity + "<br/>" + "<br/>" + "<br/>" + "<b><u>Date</b></u>: " + d.release_date)
+          .style("left", (d3.event.pageX + 10) + "px")
+          .style("top", (d3.event.pageY - 30) + "px");
+      })
+      .on("mouseout", function(d) {
+        div.transition()
+          .duration(500)
+          .style("opacity", 0);
       });
 
-
-    });
+});
 
 
 
