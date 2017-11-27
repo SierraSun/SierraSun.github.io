@@ -73,7 +73,7 @@ var q = d3.queue()
 
 
   var svg = d3.select("#mysvg"),
-      margin = {top: 20, right: 20, bottom: 60, left: 60},
+      margin = {top: 20, right: 90, bottom: 60, left: 80},
       width = +svg.attr("width") - margin.left - margin.right,
       height = +svg.attr("height") - margin.top - margin.bottom;
 
@@ -87,7 +87,7 @@ var q = d3.queue()
       r = d3.scaleLinear().domain([d3.min(finaldata,function(d){return d.vote_average;}),d3.max(finaldata,function(d){return d.vote_average;})])
       .range([4,15]);
       color = d3.scaleSequential()
-  .domain([0, 25])
+  .domain([45,75])
   .interpolator(d3.interpolateRainbow);
 
   // Append the SVG element with a g element
@@ -125,7 +125,7 @@ var q = d3.queue()
   // Add a label for the Y-Axis
   g.append("text")
     .attr("transform", "rotate(-90)")
-    .attr("y", 0 - margin.left)
+    .attr("y", 9 - margin.left)
     .attr("x", 0 - (height / 2))
     .attr("dy", ".75em")
     .style("text-anchor", "middle")
@@ -139,7 +139,7 @@ var q = d3.queue()
     .enter().append("circle")
       .attr("class", "circle")
       .style("fill",function(d){return color(d.vote_average);})
-      .style("fill-opacity",1)
+      .style("fill-opacity",0.7)
       .attr("r", function(d)  {return r(d.vote_average);})
       .attr("cx", function(d) { return x(d.release_date); })
       .attr("cy", function(d) { return y(d.vote_average); })
@@ -148,23 +148,36 @@ var q = d3.queue()
         div.transition()
           .duration(200)
           .style("font-variant","normal")
+          .style("background-color","rgba(255,255,255,0.6)")
           .style("line-height","60%")
           .style("stroke", "black")
           .style("opacity",1)
 
         var dpath= d.poster_path;
 
-        var url= "http://image.tmdb.org/t/p/w154"+dpath
+        var url= "http://image.tmdb.org/t/p/w92"+dpath
         console.log(url)
 
 
         div.html(
-          "<b><u>Popularity</b></u>: " + d.vote_average + "<br/>" + "<br/>" + "<br/>"+ "<b><u>Name</b></u>: " +d.title+ "<br/>" +"<br/>" +"<br/>"+"<b><u>Poster</b></u>: "+ "<img src='" + url + "' />")
-          .style("left", (d3.event.pageX - 300) + "px")
-          .style("top", (d3.event.pageY - 100) + "px");
+
+         "<h2>"+d.title+ "</h2>" + "<h3>"+"<img src='" + url + "' />"+ "</h3>"+ "<h1>"+d.vote_average +"</h1>"
+
+
+
+        )
+          .style("left", (d3.event.pageX -130) + "px")
+          .style("top", (d3.event.pageY - 200) + "px")
 
       g.selectAll("circle").transition().duration(200)
-            .style("fill-opacity",0.2)
+            .style("fill-opacity", function(dd) {
+              if (dd === d) {
+                return 1;
+              }
+              else {
+                return 0.1;
+              }
+            })
 
       })
 
@@ -174,7 +187,7 @@ var q = d3.queue()
           .style("opacity", 0);
 
         g.selectAll("circle").transition().duration(200)
-          .style("fill-opacity",1)
+          .style("fill-opacity",0.7)
       });
 
       });

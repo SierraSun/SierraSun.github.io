@@ -5835,6 +5835,40 @@ button.close {
   filter: alpha(opacity=0);
   opacity: 0;
 }
+
+.tooltip h1{
+
+  font-family: "OpenSans-oblique";
+  font-weight: bold;
+  font-size: 120px;
+  text-align: right;
+  margin-top:-120px;
+  margin-left: 100px;
+  color: #03689b;
+}
+.tooltip h2{
+
+  font-family: "OpenSans-oblique";
+  font-weight: bold;
+  color: gray;
+  font-size: 19px;
+  text-align: center;
+
+}
+.tooltip h3{
+  position:left;
+  margin-top: 10px;
+}
+.tooltip h4{
+  font-family: "OpenSans-oblique";
+  font-weight: bold;
+  font-size:50px;
+  /*text-align: right;*/
+  margin-top:-120px;
+  margin-left: 50px;
+  color: #f43c60;
+}
+
 .tooltip.in {
   filter: alpha(opacity=90);
   opacity: .9;
