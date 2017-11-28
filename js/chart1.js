@@ -4,7 +4,7 @@ var margin =100;
 
 var svg=d3.select ("#mysvg")
  .style("background-color","ghost-white")
- .attr("width", window.innerWidth - margin*1.3)
+ .attr("width", window.innerWidth - margin*2)
  .attr("height",window.innerHeight - margin)
 
 var q = d3.queue()

@@ -164,7 +164,7 @@ d3.json("https://api.themoviedb.org/3/configuration?api_key=55602ab6a865d4f67ef2
 
 
         div.html(
-           "<h2>"+d.title+ "</h2>" + "<h3>"+"<img src='" + url + "' />"+ "</h3>"+ "<h4>"+d.popularity +"</h4>"
+           "<h6>"+d.title+ "</h6>" + "<div>"+"<img src='" + url + "' align='middle'/>"+ "</div>" + "<h4>"+d.popularity +"</h4>"
         )
           .style("left", (d3.event.pageX - 300) + "px")
           .style("top", (d3.event.pageY - 100) + "px");

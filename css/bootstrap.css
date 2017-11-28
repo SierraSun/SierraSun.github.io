@@ -5864,9 +5864,23 @@ button.close {
   font-weight: bold;
   font-size:50px;
   /*text-align: right;*/
-  margin-top:-120px;
-  margin-left: 50px;
+  margin-top:10px;
+  text-align: center;
   color: #f43c60;
+}
+.tooltip div{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.tooltip h6{
+
+  font-family: "OpenSans-oblique";
+  font-weight: bold;
+  color: gray;
+  font-size: 19px;
+  text-align: center;
+
 }
 
 .tooltip.in {
