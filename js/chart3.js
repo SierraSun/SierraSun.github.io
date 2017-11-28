@@ -1,13 +1,13 @@
 d3.select ("body").style("margin","0px");
 
-var margin =150;
 
 var svg=d3.select ("#mysvg3")
  .style("background-color","white")
- .attr("width", window.innerWidth - margin)
+ .attr("width", window.innerWidth - margin*2)
  .attr("height",window.innerHeight-margin*0.2)
  .attr("margin-left","0px")
- .attr("transform","translate(" - margin - ", " + margin + ")");
+ .attr("transform","translate(" - margin - ", " + margin + ")")
+ .attr("align","left");
 
 d3.json("json/world.json", function(error, data) {
 

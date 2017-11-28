@@ -160,7 +160,7 @@ d3.json("https://api.themoviedb.org/3/configuration?api_key=55602ab6a865d4f67ef2
 
         var dpath= d.poster_path;
 
-        var url= "http://image.tmdb.org/t/p/w92"+dpath
+        var url= "http://image.tmdb.org/t/p/w154"+dpath
         console.log(url)
 
 
