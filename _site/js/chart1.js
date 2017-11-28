@@ -6,6 +6,7 @@ var svg=d3.select ("#mysvg")
  .style("background-color","ghost-white")
  .attr("width", window.innerWidth - margin*2)
  .attr("height",window.innerHeight - margin)
+ .attr("align","center");
 
 var q = d3.queue()
   .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=1")
