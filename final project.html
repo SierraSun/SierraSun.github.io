@@ -25,8 +25,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <span class="menu"></span>
 					<ul class="nav1">
 						 <li class="active"><a href="final project.html">Home</a></li>
-						 <li><a href="index.html">About Author</a></li>
-						 <li><a href="gallery.html">Movie Gallery</a></li>
+						 <li><a href="index.html" target="_blank">About Author</a></li>
+						 <li><a href="https://www.themoviedb.org/discover/movie" target="_blank">The Movie DB</a></li>
 				  </ul>
 			 </div>
 	 <!-- script-for-menu -->
@@ -94,9 +94,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="content">
 	 <div class="container">
 		 <div class="vote-avarage">
-			 <h3>Vote Avarage</h3>
+			 <h3>Average Vote of Movies</h3>
 			 <span> </span>
-       <svg id="mysvg" style="margin-top:100px;margin-bottom:30px"></svg>
+       <div class="textarea">
+				 <div class="explanationtext">
+					 <h1> ScatterPlot：Average Vote of Movies </h1>
+					 <h2> Database:</h2>
+					 <p>version 3 of The Movie Database (TMDb) API.</p>
+				 </div>
+
+				 <div class="explanationtext">
+					 <h2> How it calculated:</h2>
+					 <p> Vote averages are calculated as an average across all ratings and ordered from highest to lowest
+					 	 by using "bayesian average". This method of calculating the average allows ratings to go up and down as
+						 they are rated as such, but also prevents a single vote from over taking the highest rated spot.
+						  It also prevents the reverse of course, a single vote going straight to the bottom.</p>
+				 </div>
+
+				 <div class="explanationtext">
+					 <h2> Three movies in the banner:</h2>
+					 <p> As you can see, there are three movies in the banner, which have been selected from this ScatterPlot.
+					 Those three movies are my favorite movie and they ranked here from 2 - 4.</p>
+         </div>
+
+       </div>
+       <svg id="mysvg" style="margin-top:1em;margin-bottom:30px"></svg>
 
        <script src="https://d3js.org/d3.v4.min.js"></script>
 			 <script src="js/chart1.js"></script>
@@ -158,47 +180,51 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- latest -->
 <div class="latest">
 	 <div class="container" >
-		 <div class="latest-games" style="margin-top:50px;margin-bottom:100px;">
+		 <div class="latest-games" style="margin-top:50px;margin-bottom:1.7em;">
 			 <h3>Popularity of movies</h3>
 			 <span></span>
+			 <h2>TOP3 Popular Movie of 2017</h2>
 		 </div>
 		 <div class="latest-top">
-				<div class="col-md-5 trailer-text">
+
 				   <div class="sub-trailer">
 				       <div class="col-md-4 sub-img">
-							<img src="images/MV5BNWNmZmFjNmEtNTg2OS00MTlkLTg5OGYtM2I5YmQ4ZDQxMjZkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNzAxNDU5Mzk@._CR13,315,1375,1375_UX402_UY402._SY201_SX201_AL_.jpg" alt="img01"/>
-					   </div>
-					   <div class="col-md-8 sub-text">
-					   		 <a href="#">IT: premiered in Los Angeles on September 5, 2017</a>
+							 <img src="images/MV5BNWNmZmFjNmEtNTg2OS00MTlkLTg5OGYtM2I5YmQ4ZDQxMjZkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNzAxNDU5Mzk@._CR13,315,1375,1375_UX402_UY402._SY201_SX201_AL_.jpg" alt="img01"/>
+					     </div>
+					     <div class="col-md-8 sub-text">
+					   	<a href="https://en.wikipedia.org/wiki/It_(2017_film)" target="_blank">IT: premiered in Los Angeles on September 5, 2017</a>
 							 <p>2017 American supernatural horror filmdirected by Andy Muschietti...</p>
-					   </div>
+					    </div>
 					    <div class="clearfix"> </div>
 				   </div>
-				    <div class="sub-trailer">
+
+					 <div class="sub-trailer">
 				       <div class="col-md-4 sub-img">
-							<img src="images/Thor 2018 calendar.jpg" alt="img02"/>
-					   </div>
-					   <div class="col-md-8 sub-text">
-					   		 <a href="#"> Thor: Ragnarok has grossed more than $427 million worldwide.</a>
+							 <img src="images/Thor 2018 calendar.jpg" alt="img02"/>
+					     </div>
+					     <div class="col-md-8 sub-text">
+					   	 <a href="https://en.wikipedia.org/wiki/Thor:_Ragnarok" target="_blank"> Thor: Ragnarok has grossed more than $427 million worldwide.</a>
 							 <p>Thor: Ragnarok is a 2017 American superhero film based on the Marvel Comics character Thor...</p>
-					   </div>
+					     </div>
 					    <div class="clearfix"> </div>
 				   </div>
-				    <div class="sub-trailer">
+
+						<div class="sub-trailer">
 				       <div class="col-md-4 sub-img">
-							<img src="images/minions-blog-article-square.jpg" alt="img03"/>
-					   </div>
-					   <div class="col-md-8 sub-text">
-					   		 <a href="#">Minions: A sequel is scheduled to be released on July 3, 2020.</a>
-							 <p>Minions is a 2015 American computer-animated comedy film...</p>
-					   </div>
+							 <img src="images/sleight.png" alt="img03"/>
+					    </div>
+					    <div class="col-md-8 sub-text">
+					   	<a href="https://www.thedailybeast.com/sleight-is-magic-the-first-great-black-superhero-movie" target="_blank">‘Sleight’ Is Magic: The First Great Black Superhero Movie.</a>
+							<p>Superhero cinema overload is now a year-round condition, as proven by the fact that Logan and The Lego Batman Movie are still making money at the multiplex...</p>
+					    </div>
 					    <div class="clearfix"> </div>
 				   </div>
+
 				</div>
-	</div>
+
 
 				<div class="chart2" >
-        <svg id="mysvg2" style="margin-top:0px;margin-bottom:30px;"> </svg>
+        <svg id="mysvg2" style="margin-top:0px;margin-bottom:30px;width:100%;"> </svg>
 					<style>
 
 					#mysvg2 {
@@ -235,7 +261,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					  word-spacing: 150%;
 					  vertical-align: top;
 					  width: 290px;
-					  height: 500px;
+					  height:200px;
 					  padding: 5px;
 					  color: #000000;
 					  font-size: 12px;
@@ -252,7 +278,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
           <script src="https://d3js.org/d3.v4.min.js"></script>
           <script src="js/chart2.js"></script>
 
+          <div class="explanation-text">
 
+						<h1> ScatterPlot：Popularity of Movies </h1>
+						<h2> Database:</h2>
+						<p>version 3 of The Movie Database (TMDb) API.</p>
+						<h2> How it calculated:</h2>
+						<p>The popularity is calculated based on TMDB's user interactions,
+							things like page views, users adding it to a list, users rating it,
+							 etc. Release date also plays a part with recently released shows
+							 weighted higher in popularity.</p>
+						<h2> Filter data:</h2>
+						<p>The whole range of Popularity is up to "700", however, less data entries are showed up there.
+							So, I just filter the range of data from minimum value to "80", where the most data entries
+						have been diplayed.</p>
+					</div>
 
 				</div>
 			</div>
@@ -261,13 +301,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- poster -->
 <div class="container">
 		<div class="poster-info" style="margin-top:-100px">
-			 <h3>Distribution of movies</h3>
+			 <h3>The Rank of The Scale of Film Industry</h3>
 
 			 <div class="chart3" sytle="margin-right:100px;">
 				 <div class="nations">
 					 <div class="flag" style="margin-top:10%">
 						 <h1> No.1 </h1>
-						 <img src="https://static.thetoptens.com/img/lists/9.jpg" width="100%" height="50%"/>
+						 <img src="https://static.thetoptens.com/img/lists/9.jpg" width="100%" height="140px"/>
              <h2> India </h2>
 					 </div>
 					 <div class="explanation" style="margin-top:10%;width:97%">
@@ -277,7 +317,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						 <div class="flag" style="margin-top:10%">
 						 <h1> No.2 </h1>
-						 <img src="https://static.thetoptens.com/img/lists/8.jpg" width="100%" height="50%"/>
+						 <img src="https://static.thetoptens.com/img/lists/8.jpg" width="100%" height="140px"/>
 						 <h2> United States of America </h2>
 					   </div>
 
@@ -288,7 +328,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 						<div class="flag" style="margin-top:10%">
 							<h1> No.3 </h1>
-							<img src="https://static.thetoptens.com/img/lists/28.jpg" width="100%" height="50%"/>
+							<img src="https://static.thetoptens.com/img/lists/28.jpg" width="100%" height="140px"/>
 							<h2> China </h2>
 						</div>
 
@@ -300,7 +340,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  </div>
 
 
-				 <svg id="mysvg3" style="margin-top:25%;width:100%;"></svg>
+				 <svg id="mysvg3" style="margin-top:25%;width:97%;margin-left:2em;"></svg>
 
 				 <script src="https://d3js.org/d3.v4.min.js"></script>
 				 <script src="https://unpkg.com/topojson@3"></script>

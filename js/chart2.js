@@ -6,7 +6,7 @@ console.log(widthc);
 
 var svg=d3.select ("#mysvg2")
  .style("background-color","white")
- .attr("width", widthc-0.05*widthc)
+ .attr("width", widthc-0.3*widthc)
  .attr("height",650)
  .attr("align","center");
 
@@ -159,23 +159,25 @@ d3.json("https://api.themoviedb.org/3/configuration?api_key=55602ab6a865d4f67ef2
         div.transition()
           .duration(200)
           .style("font-variant","normal")
-          .style("background-color","rgba(255,255,255,0.95)")
+          .style("background-color","rgba(255,255,255,0.7)")
           .style("line-height","60%")
           .style("opacity", 1)
-          .style("height","400px")
+          .style("height","320px")
           .style("stroke", "black");
 
         var dpath= d.poster_path;
 
         var url= "http://image.tmdb.org/t/p/w154"+dpath
         console.log(url)
-
-
+        var posx= widthc-d3.select(this).attr("cx")+ "px"
+        console.log(posx)
+        console.log(d3.event.pageX+(widthc-d3.select(this).attr("cx")) + "px")
+        console.log(d3.event.pageX + "px")
         div.html(
            "<h6>"+d.title+ "</h6>" + "<div>"+"<img src='" + url + "' align='middle'/>"+ "</div>" + "<h4>"+d.popularity +"</h4>"
         )
-          .style("left", (d3.event.pageX - 300) + "px")
-          .style("top", (d3.event.pageY - 100) + "px");
+          .style("left", (d3.event.pageX-80) + "px")
+          .style("top", (d3.event.pageY - 380) + "px");
 
           g.selectAll("circle").transition().duration(200)
                 .style("fill-opacity", function(dd) {

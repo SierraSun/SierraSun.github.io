@@ -3,10 +3,13 @@ d3.select ("body").style("margin","0px");
 var width = parseFloat(d3.select(".chart3").style("width"));
 console.log(width);
 
+var height = parseFloat(d3.select(".chart3").style("height"));
+console.log(height);
+
 var svg=d3.select ("#mysvg3")
  .style("background-color","white")
  .attr("width", width*0.55)
- .attr("height",window.innerHeight-margin*0.2)
+ .attr("height",height)
  .attr("margin-left","-50%")
  .attr("transform","translate(" - margin - ", " + margin + ")")
  .attr("align","left");
@@ -77,7 +80,7 @@ d3.json("json/world.json", function(error, data) {
  console.log(geoJSON);
 
  var proj = d3.geoOrthographic()
-   .fitSize([width*0.55, width*0.55], geoJSON);
+   .fitSize([width, width], geoJSON);
  var path = d3.geoPath()
    .projection(proj);
 

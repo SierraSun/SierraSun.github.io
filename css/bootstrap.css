@@ -5827,6 +5827,7 @@ button.close {
     width: 900px;
   }
 }
+
 .tooltip {
   position: absolute;
   z-index: 1070;
@@ -5887,11 +5888,10 @@ button.close {
 }
 
 .tooltip h5{
-
-  font-family: "OpenSans-oblique";
+  font-family: "Play-Bold";
   font-weight: normal;
-  color: black;
-  font-size: 24px;
+  color: #46c0da;
+  font-size: 50px;
   text-align: right;
   margin-left: 100%;
 }
