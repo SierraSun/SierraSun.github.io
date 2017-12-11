@@ -2,9 +2,11 @@ d3.select ("body").style("margin","0px");
 
 var margin =100;
 
+var width = parseFloat(d3.select(".container").style("width"));
+console.log(width);
 var svg=d3.select ("#mysvg")
- .style("background-color","ghost-white")
- .attr("width", window.innerWidth - margin*2)
+ .style("background-color","white")
+ .attr("width", width)
  .attr("height",window.innerHeight - margin)
  .attr("align","center");
 

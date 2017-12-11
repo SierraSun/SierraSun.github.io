@@ -1,10 +1,15 @@
 d3.select ("body").style("margin","0px");
 
+
+var widthc = parseFloat(d3.select(".latest-top").style("width"));
+console.log(widthc);
+
 var svg=d3.select ("#mysvg2")
  .style("background-color","white")
- .attr("width", 650)
+ .attr("width", widthc-0.05*widthc)
  .attr("height",650)
- .attr("align","right");
+ .attr("align","center");
+
 
  var q = d3.queue()
    .defer(d3.json, "https://api.themoviedb.org/3/movie/top_rated?api_key=55602ab6a865d4f67ef22e188f6ce063&language=en-US&page=1")
@@ -85,6 +90,7 @@ var x = d3.scaleTime().rangeRound([0, width]),
     .range([1,20])
     color = d3.scaleSequential().domain([10, 1]).interpolator(d3.interpolateRainbow);
 
+
 // Append the SVG element with a g element
 // to offset the origin of the chart area by
 // the top-left margin
@@ -106,7 +112,7 @@ d3.json("https://api.themoviedb.org/3/configuration?api_key=55602ab6a865d4f67ef2
   // Scale the range of the data from the minimum value
   // to the maximum value
   x.domain(d3.extent(finaldata, function(d){ return d.release_date;}));
-  y.domain([0,72]);
+  y.domain([d3.min(finaldata,function(d){return d.popularity;}),80]);
 
   console.log(data);
 
@@ -153,9 +159,10 @@ d3.json("https://api.themoviedb.org/3/configuration?api_key=55602ab6a865d4f67ef2
         div.transition()
           .duration(200)
           .style("font-variant","normal")
-          .style("background-color","rgba(255,255,255,0.6)")
+          .style("background-color","rgba(255,255,255,0.95)")
           .style("line-height","60%")
           .style("opacity", 1)
+          .style("height","400px")
           .style("stroke", "black");
 
         var dpath= d.poster_path;
@@ -183,7 +190,7 @@ d3.json("https://api.themoviedb.org/3/configuration?api_key=55602ab6a865d4f67ef2
 
       .on("mouseout", function(d) {
         div.transition()
-          .duration(500)
+          .duration(100)
           .style("opacity", 0);
 
           g.selectAll("circle").transition().duration(200)
