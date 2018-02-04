@@ -337,3 +337,13 @@ span.EastBoston_footer {
 	grid-column-gap:20px;
 	grid-row-gap: 15px;
 }
+/* ——————————————list image—————————————————————— */
+ul.a{
+  list-style: circle inside url("css/images/dot1.svg");
+}
+ul.b{
+  list-style: circle inside url("css/images/dot2.svg");
+}
+ul.c{
+  list-style: circle inside url("css/images/dot3.svg");
+}
