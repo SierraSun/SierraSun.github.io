@@ -27,6 +27,17 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/eastboston/favicon.png">
+  <!-- script
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZUONbpqGBsYGXNIYHicvbAbM"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
 
 </head>
 
@@ -66,124 +77,166 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!-- ——————————————————————top picture—————————————————————————— -->
-  <div class="parallax"></div>
+  <div class="parallax">
+  <img src="css/images/backgroundsmall.jpg" width="100%" text-align="center">
+
+
+  </div>
   <!-- ——————————————————————article—————————————————————————— -->
   <div class="container">
 
     <div class="row">
       <div class="column EastBoston">
+
         <h1 class="EastBoston_head">Pediatric asthma more likely near Logan Airport</h1>
 
           <p>
             Does living close to the airport increase the risk of childhood asthama?
             According to logan airport health study final report, children who live in neighborhoods
-            bordering Logan International Airport are as much as <font size="5rem" color="#f28e2c">four times</font>
+            bordering Logan International Airport are as much as <font size="3rem" color="#f05f00">four times</font>
             more likely to wheeze, experience shortness of breath, and exhibit other signs
             of undiagnosed asthma compared with children who live farther away.</p>
-          <h5 class="EastBoston_byline">By Sierra Sun</h5>
-          <br> </br>
 
-          <h2 class="EastBoston_head">Pediatric asthma rate is much higher in Boston</h2>
+          <h5 class="EastBoston_byline">By Sierra Sun</h5>
+
 <!-- ——————————————————————chart1—————————————————————————— -->
-          <div class="callout">
+        <button class="accordion">
+          <h2 class="EastBoston_head">Pediatric asthma rate is much higher in Boston</h2>
+        </button>
+        <div class="panel">
+
+         <div class="callout">
             <b>Annual Average Crude Rates of Hospital Admission for
             Asthma per 10,000 People (aged 0 - 14)</b>
           </div>
 
-          <img src="css/images/WX20180129-085630@2x.png" width="100%">
-          <br> </br>
+
+        <div id="chart1" style="height:350px;"></div>
+
+          <script type="text/javascript" src="js/bostonchart1.js"></script>
+
+          <div style="text-align:center">
+            <img src="css/images/finger.svg" style="margin-top:2%;width:250px;">
+          </div>
+
           <p>
-            From the chart above, you can tell that Boston have much higher rate of hospital admission due to
-            asthma.
+            From the chart above, we can tell that Boston area have much higher rate of hospital admission for asthma.
+            Therefore, how about the condition in East Boston, which near Logan airport?
           </p>
+
+        </div>
 <!-- ——————————————————————chart2—————————————————————————— -->
-          <div class="callout">
-            <b>Comparison of prevalence of pediatric asthma between Boston schools and Massachusetts schools </b>
-          </div>
-
-          <img src="css/images/school prevalence.png" width="100%">
-
-          <br> </br>
-          <p>
-            From the chart above, we can know that Boston students have much higher rate of asthma
-            comparing to whole state students. Boston is home to a disproportionate number of these children.
-            During the 2014-2015 school year, <font size="5rem" color="#f28e2c">2,706 </font>of Boston’s elementary and middle school students had asthma –
-            nearly <font size="5rem" color="#f28e2c">14.1%</font> of students!
-          </p>
-
-          <br> </br>
-<!-- ——————————————————————chart3—————————————————————————— -->
+         <button class="accordion">
           <h2 class="EastBoston_head">
-           Distribution of pediatric asthma
+           Children in East Boston more likely to have asthma
           </h2>
+         </button>
+
+        <div class="panel">
 
           <div class="callout">
-          <b>Median prevalence of pediatric asthma among boston schools</b>
+          <b>Air pollutants –– the main trigger of pediatric asthma</b>
           </div>
 
-       </div>
-    </div>
-  </div>
+          <p>
+            The Massachusetts state had conducted a comprehensive environmental health assessment
+            of Logan Airport. In the report, it examined the prevalence of respiratory outcomes
+            among children for those living in <font size="3rem" color="#f05f00">three levels</font> airport-related air pollution exposure areas.
+            <br><font size="3rem" color="#f05f00"><b>High exposure:</b> Living in the areas where have high exposure to air pollutants due to the airport.</font></br>
+            <font size="3rem" color="#f05f00"><b>Medium exposure:</b> Living in the areas where have medium exposure to air pollutants due to the airport.</font>
+            <br><font size="3rem" color="#f05f00"><b>Low exposure:</b> Living in the areas where have low exposure to air pollutants due to the airport.</font></br></p>
+          <p>
+            The main air pollutants are comprise of <font size="3rem" color="#f05f00">PM2.5 and NOx</font>. Area near Logan airport has more concentration of NOx and PM2.5.
+            Which means, <font size="3rem" color="#f05f00">you will have more exposure to the air Pollutants when you live near Logan Airport</font>.
+            You can see the heatmap bellow:
+          </p>
+          <div class="chart3">
+              <img src="css/images/heatmap1.svg" width="100%">
+              <img src="css/images/heatmap2.svg" width="100%">
+          </div>
 
-  <div class="chart3">
-          <img src="css/images/median.png" width="100%">
-  <div class="container">
+          <p>
+          Based on study, high relation between the concentration of air pollutants or the exposure degree, and the posibility to get asthma
+          has been found.
+          </p>
+          <div class="callout">
+            <b>Children will have more probability to have asthma when living in HIGH EXPOSURE area </b>
+          </div>
 
-    <br> </br>
-    <p>
-        From the map, we can know that Boston students inside the region of Chinatown, have
-        much higher asthma prevalence than other region. Meanwhile, the asthma
-        prevalence is growing along with the time.
-    </p>
+        <div id="chart2" style="height:400px;width:100%">
+            <script type="text/javascript" src="js/bostonchart2.js"></script>
+        </div>
+<!-- ——————————————————————chart3—————————————————————————— -->
 
-    <br> </br>
+        <p>
+        As you can see from the chart, probable asthma was more prevalent in the high exposure area
+        than in the medium or low exposure areas. Similarly, the prevalence of chronic bronchitis
+        increased as the potential for exposure increased. However, current asthma among children were similar
+        across all three exposure areas.
+        </p>
+
+        </div>
 
 <!-- ——————————————————————chart4—————————————————————————— -->
+<button class="accordion">
     <h2 class="EastBoston_head">
-     Asthma triggers -- Air pollutants
+     The "Killers" of Logan Airport's air pollution
    </h2>
-    <p>
-    For many of these studies, ambient concentrations of <font size="5rem" color="#f28e2c">PM2.5</font> and the
-    gaseous <font size="5rem" color="#f28e2c">co-pollutants</font> (i.e., CO, sulfur dioxide (SO2), NO2 and ozone) are
-    highly correlated with certain health outcomes.
-    <br> </br>
-    Recently promulgated ambient air standards by the US EPA for nitrogen dioxide (NO2) (US EPA, 2008) and SO2 (US EPA, 2008a)
-    are based on studies that have demonstrated respiratory health effects from short- term exposure to NO2 and SO2,
-    including airway inflammation in healthy people; <font size="5rem" color="#f28e2c">increased respiratory symptoms in people with asthma, and increased
-    visits to emergency departments and hospital admissions for respiratory illnesses.</font>
-    <br> </br>
-    Numerous scientific studies over the past 20 years have linked <font size="5rem" color="#f28e2c">PM exposure</font>
-    to respiratory health effects, including <font size="5rem" color="#f28e2c">aggravated asthma</font>.
-   </p>
+</button>
 
-   <div class="callout">
-   <b>Value of 5 main Air Pollutants in Boston for past one month</b>
+<div class="panel">
+
+  <div class="callout">
+  <b>Emissions Inventory for Logan Airport--2005 (kg/year)</b>
+  </div>
+
+   <div id="chart3" style="height:350px;">
+     <script type="text/javascript" src="js/bostonchart3.js"></script>
    </div>
 
-    <div class="chart4">
-      <img src="css/images/AIR POLLUTANTS.jpg" width="100%">
-    </div>
-    <br></br>
+   <p>
+   <b>Aircraft:</b> Including aircraft approaching and departing in the air, landings and takeoffs,
+   aircraft movements on the runways, taxiways, and areas near the terminals.
+   <br><b>GSE:</b> Aircraft ground support equipment that is needed at the terminal to load or handle arriving or departing aircraft.</br>
+   <b>APUs:</b> Auxiliary power units at the terminals used to energize aircraft at the terminals.
+   <br><b>PF:</b> Parking facilities:emissions from vehicles in the parking garages.</br>
+   <b>Roadways:</b> Motor vehicle traffic on the Logan property.
+   <br><b>SS:</b> Stationary Sources: Massport‘s power boilers that provide power or steam to the airport.</br>
+   <b>TF:</b> Training Fires:Aircraft Rescue and Fire Fighting:is a special category of firefighting that involves
+    the response, hazard mitigation, evacuation and possible rescue of passengers and crew of an aircraft
+    involved in (typically) an airport ground emergency.
+   </p>
 
-    <div class="callout">
-    <b>Distribution of 5 main Air Pollutants in Boston for past one month</b>
-    </div>
 
-    <div class="chart5">
-      <img src="css/images/Distribution.jpg" width="100%">
-    </div>
 
-    <p>
-    From above, we can find that air quality in places which near Logan airport is <font size="5rem" color="#f28e2c">much worse</font>
-    than places which far away from Logan Airport.
-    <br> </br>
+    </div>
 
   </div>
+</div>
 
 
 <h6 class="EastBoston_footer"><span class="EastBoston_footer">Visualizing Eastie</span> is a project of the <a href="https://www.northeastern.edu/visualization/">Information Design and Visualization program</a> at Northeastern University. © 2018</h6>
-
+</div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- accordin -->
+  <script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight){
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+      });
+  }
+
+  </script>
+
 </body>
 </html>

@@ -254,9 +254,12 @@ input,
 optgroup,
 select,
 textarea {
-  color: inherit; /* 1 */
-  font: inherit; /* 2 */
-  margin: 0; /* 3 */
+  color: #f46400; /* 1 */
+  font-family: "GrifoL-Bold","Georgia",serif; /* 2 */
+  margin: 0;
+  font-weight: bold;
+  border-style: none;
+  text-align:left;/* 3 */
 }
 
 /**
