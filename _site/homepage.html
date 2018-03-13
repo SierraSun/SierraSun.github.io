@@ -36,35 +36,30 @@
 
 <body>
 
-<!-- Hamburger menu
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <nav role="navigation" class="EastBoston_nav" >
+  <!-- Hamburger menu
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+      <nav role="navigation" class="EastBoston_nav" >
+    <div id="menuToggle">
+      <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+      <input type="checkbox" />
 
-  <div id="menuToggle">
-    <!--
-    A fake / hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
-    -->
-    <input type="checkbox" />
+      <!--
+      Some spans to act as a hamburger.
+      -->
+      <span></span>
+      <span></span>
+      <span></span>
 
-    <!--
-    Some spans to act as a hamburger.
-    -->
-    <span></span>
-    <span></span>
-    <span></span>
-
-    <ul id="menu">
-        <a href="#" ><li style="font-size:4rem">Article 1</li></a>
-        <a href="#"><li style="font-size:4rem">Article 2</li></a>
-        <a href="#"><li style="font-size:4rem">Article 3</li></a>
-        <a href="#"><li style="font-size:4rem">Article 4</li></a>
-        <a href="#"><li style="font-size:4rem">Article 5</li></a>
-        <a href="#"><li style="font-size:4rem">Article 6</li></a>
-
-    </ul>
-  </div>
-</nav>
+      <ul id="menu">
+          <a href="https://web.northeastern.edu/visualizingeastie/the-people" ><li style="font-size:4rem">The people</li></a>
+          <a href="https://web.northeastern.edu/visualizingeastie/the-environment"><li style="font-size:4rem">The environment</li></a>
+          <a href="https://web.northeastern.edu/visualizingeastie/the-built-city"><li style="font-size:4rem">The built city</li></a>
+      </ul>
+    </div>
+  </nav>
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -83,7 +78,7 @@
         <h1 class="EastBoston_head">Asthma is more likely for children living near Logan Airport</h1>
 
           <p>
-            Does living close to the airport increase the risk of childhood asthama?
+            Does living close to the airport increase the risk of childhood asthma?
             According to <a href="http://www.mass.gov/eohhs/docs/dph/environmental/investigations/logan/logan-airport-health-study-final.pdf"> Logan Airport Health Study</a> (Conducted by Massachusetts
             Department of Public Health Bureau of Environmental Health), children who live in neighborhoods
             bordering Logan International Airport are as much as <font size="3rem" color="#f05f00">four times</font>
@@ -94,7 +89,7 @@
 
 <!-- ——————————————————————chart1—————————————————————————— -->
 
-        <br><h2 class="EastBoston_head">Children asthma rate is much higher in Boston</h2>
+        <br><h2 class="EastBoston_head">Children asthma rate are much higher in Boston</h2>
 
          <div class="callout">
             <b>Annual Average Crude Rates of Hospital Admission for
@@ -111,7 +106,7 @@
         </div>
 
           <p>
-            From the chart above, we can tell that Boston area have much higher rate of hospital admission for asthma.
+            From the chart above, we can tell that Boston area has a much higher rate of hospital admission for asthma.
             Therefore, how about the condition in East Boston, which near Logan airport?
           </p>
 
@@ -144,16 +139,16 @@
 
 
           <p>
-            The main air pollutants are comprise of <font size="3rem" color="#f05f00">PM2.5 and NOx</font>. Area near Logan airport has more concentration of NOx and PM2.5.
-            Which means, <font size="3rem" color="#f05f00">you will have more exposure to the air Pollutants when you live near Logan Airport</font>.
-            You can see the map bellow:
+            The main air pollutants are comprised of <font size="3rem" color="#f05f00">PM2.5 and NOx</font>. Areas near Logan airport have higher concentration of NOx and PM2.5,
+            which means <font size="3rem" color="#f05f00">you will have more exposure to the air pollutants when you live near Logan Airport</font>.
+            You can see the map below:
           </p>
           <div style="text-align:center">
               <img src="css/images/map.svg" width="100%">
           </div>
 
           <p>
-          Based on study, high relation between the concentration of air pollutants or the exposure degree, and the posibility to get asthma
+          Based on the study, a positive correlation between the exposure degree and the possibility to suffer from asthma
           has been found.
           </p>
           <div class="callout">
@@ -169,12 +164,12 @@
         </div>
 
         <p>
-        As you can see from the chart, probable asthma was more prevalent in the high exposure area
+        As you can see from the chart, probable asthma are more prevalent in the high exposure areas
         than in the medium or low exposure areas. Similarly, the prevalence of chronic bronchitis
-        increased as the potential for exposure increased. In sum, <font size="3rem" color="#f05f00">probable asthma or undiagnosed ashma,
-        and chronic bronchitis have relationship to the distance from Logan aiport.</font> However, current asthma
-        among children were similar across all three exposure areas, in other words, <font size="3rem" color="#f05f00">there is no clear
-        relationship bettween the current asthma of children and the distance from Logan airport.</font>
+        increased as the potential for exposure increased. In sum, <font size="3rem" color="#f05f00">probable asthma or undiagnosed asthma,
+        and chronic bronchitis have relation to the distance from Logan Airport.</font> However, current asthma
+        among children is similar across all three exposure areas. In other words, <font size="3rem" color="#f05f00">there is no clear
+        relationship between the current asthma of children and the distance from Logan Airport.</font>
         </p>
 
 <!-- ——————————————————————chart3—————————————————————————— -->
@@ -202,10 +197,10 @@
    aircraft movements on the runways, taxiways, and areas near the terminals.
    <br><b>GSE:</b> Aircraft ground support equipment that is needed at the terminal to load or handle arriving or departing aircraft.</br>
    <b>APUs:</b> Auxiliary power units at the terminals used to energize aircraft at the terminals.
-   <br><b>PF:</b> Parking facilities:emissions from vehicles in the parking garages.</br>
+   <br><b>PF:</b> Parking facilities: emissions from vehicles in the parking garages.</br>
    <b>Roadways:</b> Motor vehicle traffic on the Logan property.
    <br><b>SS:</b> Stationary Sources: Massport‘s power boilers that provide power or steam to the airport.</br>
-   <b>TF:</b> Training Fires:Aircraft Rescue and Fire Fighting:is a special category of firefighting that involves
+   <b>TF:</b> Training Fires: Aircraft Rescue and Fire Fighting: is a special category of firefighting that involves
     the response, hazard mitigation, evacuation and possible rescue of passengers and crew of an aircraft
     involved in (typically) an airport ground emergency.
    </p>

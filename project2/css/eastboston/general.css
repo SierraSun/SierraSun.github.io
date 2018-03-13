@@ -1,0 +1,89 @@
+/* Preloader */
+#preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff; /* change if the mask should have another color then white */
+	z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	background-image:url(../images/status.gif); /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+/* intro-header */
+.intro-header {
+	height: 100%; /* Full PAge */
+	padding-top: 120px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 150px;
+	color: #f8f8f8;
+	background: url(../images/intro/intro1.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+}
+
+/* content-block */
+#services {
+	background-image: url(../images/fixed.jpg);
+	color:white;
+}
+.parallax{
+	padding:30px 0;
+}
+.content-block{
+	background:transparent no-repeat center center fixed;
+	background-size:cover;
+}
+
+/* Animate */
+.rotate{
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+
+    overflow:hidden;
+
+    }
+
+.rotate:hover
+{
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+}
+
+
+
+/* grid */
+@media (min-width: 586px) {
+.grid{
+ display: grid;
+ grid-template-columns: auto auto auto;
+ grid-gap: 10px;
+ padding: 10px;
+     }
+}
+@media (max-width: 586px) {
+.grid{
+ display: grid;
+ grid-template-columns: auto;
+ grid-gap: 10px;
+ padding: 10px;
+     }
+}
