@@ -31,6 +31,10 @@
  <link href="css/eastboston/animate.css" rel="stylesheet">
  <!-- Bootstrap core CSS -->
  <link href="css/eastboston/bootstrap.min.css" rel="stylesheet">
+  <!-- leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin=""/>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -44,6 +48,11 @@
 
   <script src="js/modernizr-2.6.2.min.js"></script>
   <script src="js/echarts.js"></script> <!-- Modernizr /-->
+  <!-- Leaflet's js -->
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+  integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+  crossorigin=""></script>
+<script src="js/leaflet.geocsv.js"></script>
 
 </head>
 
@@ -95,7 +104,7 @@
     <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">
     How is the crime condition in East Boston? What is the most common crime in there?
     How about comparing it to the other places in Boston?
-    Do people live in East boston feel safe about this area?
+    What's the pattern of crime in East Boston?
     Let us explore the story!</h3>
     <h5 class="EastBoston_byline_home wow fadeIn" data-wow-delay="0.8s">By Sierra Sun</h5>
   </div>
@@ -109,8 +118,8 @@
 <!-- ——————————————————————part1—————————————————————————— -->
   <div id="whatis" class="container">
     <div class="column EastBoston">
-        <br><h2 class="EastBoston_head">What is?</h2>
-            <h4 class="EastBoston_head">The most common crime in East boston</h4>
+        <br><h2 class="EastBoston_head">What kind of crime?</h2>
+            <h4 class="EastBoston_head">Showing the most common crime in East boston</h4>
     </div>
   </div>
 
@@ -119,25 +128,36 @@
     <h3 class="section-heading">Using database from <a href="https://data.boston.gov/dataset/crime-incident-reports-august-2015-to-date-source-new-system/resource/12cb3883-56f5-47de-afa5-3b1cf61b257b" target="_blank">Analyze Boston</a>,
     the top three crime categories are as follows: </h3>
 
-    <div class="grid">
-      <div style="text-align:center">
-        <img src="css/images/icon1_1.svg" width="150px">
-      </div>
-      <div style="text-align:center">
-        <img src="css/images/icon2_1.svg" width="150px">
-      </div>
-      <div style="text-align:center">
-        <img src="css/images/icon3_1.svg" width="150px">
-      </div>
-        <h3 style="text-align:center"> Larceny </h3>
-        <h3 style="text-align:center"> Drug Violation </h3>
-        <h3 style="text-align:center"> Vandalism </h3>
-    </div>
+    <div class="row">
+
+      <div class="col-sm-4 wow fadeInDown text-center animated animated" style="visibility: visible;">
+        <img class="rotate" src="css/images/icon2_1.svg" alt="" style="width:50%">
+        <h5 style="text-align:center;margin-top:10px;margin-bottom:40px">Drug Violation</h5>
+
+
+        <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-sm-4 wow fadeInDown text-center animated animated" style="visibility: visible;">
+        <img class="rotate" src="css/images/icon1_1.svg" alt="" style="width:80%">
+         <h5 style="text-align:center;margin-top:10px;margin-bottom:40px">Larceny</h5>
+
+         <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+      </div><!-- /.col-lg-4 -->
+
+      <div class="col-sm-4 wow fadeInDown text-center animated animated" style="visibility: visible;">
+        <img class="rotate" src="css/images/icon3_1.svg" alt="" style="width:50%">
+        <h5 style="text-align:center;margin-top:10px;margin-bottom:40px">Vandalism</h5>
+
+      </div><!-- /.col-lg-4 -->
+
+    </div><!-- /.row -->
+
   </div>
 <!-- ————————————————————————— most common crime —————————————————— -->
     <div class="container">
 
-      <div id="useit" class="content-section-a" style="margin-top:100px;">
+      <div id="useit" class="content-section-a" style="margin-top:80px;">
          <div class="row">
          <div class="col-sm-6 pull-right wow fadeInRightBig animated animated" style="visibility: visible; animation-name: fadeInRightBig;">
                 <img class="img-responsive " src="css/images/newsgai.svg" alt="">
@@ -146,7 +166,7 @@
          <div class="col-sm-6 wow fadeInLeftBig animated animated" data-animation-delay="200"
          style="visibility: visible; animation-name: fadeInLeftBig; margin-top:-70px; margin-bottom:10px">
 
-           <h3 class="section-heading">One Case</h3>
+           <h5 >A closer look at one case of Larceny</h5>
            <p class="lead">Police Arrest Man in Connection with Armed Robbery<br>
            <h3>
              On Monday, Jan. 8 at 6:30 a.m. a mother and her son were held at knife point and robbed.
@@ -173,34 +193,34 @@
 
 <div id="Howis" class="container">
   <div class="column EastBoston">
-      <br><h2 class="EastBoston_head">How is?</h2>
+      <br><h2 class="EastBoston_head">How they compare with Boston?</h2>
           <h4 class="EastBoston_head">The number of crime in East Boston compared to other places in Boston</h4>
   </div>
 </div>
 
 <div class="container">
 <h5 class="EastBoston_head" style="margin-top:20px">Larceny comparison</h5>
-<p style="margin-top:-20px">Data source: Analyze Boston</p>
+<p style="margin-top:-20px">Data source: Analyze Boston &nbsp &nbsp Units:Number of records</p>
 <div id="chart1" style="height:500px">
     <script type="text/javascript" src="js/chart1.js"></script>
 </div>
 
 <h5 class="EastBoston_head" style="margin-top:20px">Drug Violation comparison</h5>
-<p style="margin-top:-20px">Data source: Analyze Boston</p>
+<p style="margin-top:-20px">Data source: Analyze Boston &nbsp &nbsp Units:Number of records</p>
 <div id="chart2" style="height:500px">
     <script type="text/javascript" src="js/chart2.js"></script>
 </div>
 
 <h5 class="EastBoston_head" style="margin-top:20px">Vandalism comparison</h5>
-<p style="margin-top:-20px">Data source: Analyze Boston</p>
+<p style="margin-top:-20px">Data source: Analyze Boston &nbsp &nbsp Units:Number of records</p>
 <div id="chart3" style="height:500px">
     <script type="text/javascript" src="js/chart3.js"></script>
 </div>
 
-<h5 class="EastBoston_head" style="margin-top:20px">Overall crime map</h5>
+<!-- <h5 class="EastBoston_head" style="margin-top:20px">Overall crime map</h5>
 <div style="text-align:center">
   <img src="css/images/map.svg" style="margin-top:2%;width:100%;">
-</div>
+</div> -->
 
 </div>
 
@@ -212,47 +232,39 @@
 
       <div id="Howdo" >
         <div class="column EastBoston">
-            <br><h2 class="EastBoston_head">How Do?</h2>
-                <h4 class="EastBoston_head">people living in East Boston feel about</h4>
+            <br><h2 class="EastBoston_head">What's the pattern?</h2>
+                <h4 class="EastBoston_head">Showing crime pattern sorted by time and location</h4>
         </div>
       </div>
 
-<!-- ——————————————————————comment—————————————————————————— -->
+<!-- ——————————————————————pattern—————————————————————————— -->
 
-			<div class="row">
+<h5 class="EastBoston_head" style="margin-top:20px">Crime sorted by time</h5>
+<p style="margin-top:-20px">Data source: Analyze Boston &nbsp &nbsp Units:Number of records</p>
 
-				<div class="col-sm-4 wow fadeInDown text-center animated animated" style="visibility: visible;">
-				  <img class="rotate" src="css/images/head/head1.svg" alt="" style="width:35%">
-				  <h5 style="text-align:center;margin-top:10px;margin-bottom:40px">Emily G.</h5>
-				  <h4 class="EastBoston_head" style="text-align:left;">I lived in East Boston for two years and loved it. Affordable,
-             abundant street parking, good food (mostly hole-in-the-wall Latin American
-             spots), short commute to downtown on the arguably the most reliable train line.  </h4>
-
-				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-				</div><!-- /.col-lg-4 -->
-
-				<div class="col-sm-4 wow fadeInDown text-center animated animated" style="visibility: visible;">
-				  <img class="rotate" src="css/images/head/head2.svg" alt="" style="width:38%">
-				   <h5 style="text-align:center;margin-top:10px;margin-bottom:40px">Dave F.</h5>
-           <h4 class="EastBoston_head" style="text-align:left;">I lived in East Boston for five years,
-              and pretty much hated it.  I was, as Emily warned against, living north of Central Square,
-              which sucked.  I tried biking when I worked in Medford, and biking through the Chelsea/Revere
-               area is a horrible experience that will threaten to shake the fillings out of your teeth.  </h4>
-				   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-				</div><!-- /.col-lg-4 -->
-
-				<div class="col-sm-4 wow fadeInDown text-center animated animated" style="visibility: visible;">
-				  <img class="rotate" src="css/images/head/head3.svg" alt="" style="width:45%">
-          <h5 style="text-align:center;margin-top:10px;margin-bottom:40px">Julia F.</h5>
-          <h4 class="EastBoston_head" style="text-align:left;">My family is from East Boston,
-            some of them still live in Day Sq in the house they grew up in.
-            I think it's a nice place to live, especially since they did all
-            the work on the parks, ecc- especially Jeffries point. </h4>
-				</div><!-- /.col-lg-4 -->
-
-			</div><!-- /.row -->
+<div id="chart4" style="height:500px;margin-bottom:-160px">
+    <script type="text/javascript" src="js/chart4.js"></script>
+</div>
 
 
+<p class="zheng" style="font-size:1.8rem;font-family:'BentonSansCond-regular';color:black;letter-spacing:.1rem;
+line-height:3rem">
+  As we can see from the chart, more crime happened during August to January. Especially in August,
+  vandalism went peak to 82 cases. Drug violation happened most in October, 68 cases have been recorded.
+  While Larceny's cases kept almost at the same level around 50 from August to January.
+</p>
+
+
+<h5 class="EastBoston_head" style="margin-top:20px">Crime sorted by location</h5>
+<p style="margin-top:-20px">Data source: Analyze Boston &nbsp &nbsp Units:Number of records</p>
+
+ <div id="mapid" style="height:500px">
+  <script type="text/javascript" src="js/chart5.js"></script>
+ </div>
+
+
+
+<!-- ___________ end -->
 
 		</div>
 	</div>
