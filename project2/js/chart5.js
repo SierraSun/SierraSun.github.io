@@ -7,7 +7,7 @@
    {
      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
      maxZoom: 17,
-     minZoom: 9
+     minZoom: 13
    }).addTo(map);
 
    d3.csv('../project2/data/crime(east boston).csv', function (err, data) {
