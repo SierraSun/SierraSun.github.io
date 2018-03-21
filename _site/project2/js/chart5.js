@@ -11,21 +11,29 @@
    }).addTo(map);
 
    d3.csv('../project2/data/crime(east boston).csv', function (err, data) {
-     console.log(data);
      var newdata = data.map(function(t) {
        return {
          lat: t.Lat,
          lng: t.Long,
-         offense: t['OFFENSE_CODE_GROUP'],
+         offense: t['OFFENSE_CODE_GROUP']
        }
      });
      console.log(newdata);
 
-     newdata.forEach(function (t) {
-       L.circle([+t.lat, +t.lng],
-         {radius: 5,
-          color: colorByCode(t.offense),
-          opacity: 0.5
+     var nested_data = d3.nest()
+     .key(function(t){return t.lat;})
+     .key(function(t){return t.lng;})
+     .key(function(t){return t.offense;})
+     .rollup(function(leaves){return leaves.length;})
+     .entries(newdata)
+
+     console.log(nested_data);
+
+     nested_data.forEach(function (t) {
+       L.circle([+t.key,+t.values[0].key],
+         {radius: colorBySize(t.values[0].values.length),
+          color: colorByCode(t.values[0].values[0].key),
+          opacity: 0.5,
         }).addTo(map);
 
          function colorByCode(str) {
@@ -40,7 +48,19 @@
            }
          };
 
-     })
+         function colorBySize(num) {
+           if(num>=1 || num<50){
+             return 10
+           } else if (num>=50 || num<100) {
+             return 30
+           } else if (num>=100) {
+             return 60
+           } else{
+             return 20;
+           }
+         };
 
+         console.log(colorBySize());
+     })
 
    })
