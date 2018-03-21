@@ -30,11 +30,12 @@
      console.log(nested_data);
 
      nested_data.forEach(function (t) {
+       t.values[0].values.forEach(function(tt){
        L.circle([+t.key,+t.values[0].key],
-         {radius: colorBySize(t.values[0].values.length),
-          color: colorByCode(t.values[0].values[0].key),
-          opacity: 0.5,
-        }).addTo(map);
+         {radius: colorBySize(tt.value),
+          color: colorByCode(tt.key),
+          opacity: 0.7,
+        }).addTo(map);})
 
          function colorByCode(str) {
            if(str == 'Larceny' ){
@@ -49,18 +50,20 @@
          };
 
          function colorBySize(num) {
-           if(num>=1 || num<50){
-             return 10
-           } else if (num>=50 || num<100) {
-             return 30
-           } else if (num>=100) {
-             return 60
+           if(num>=1 && num<10){
+             return 10;
+           } else if (num>=10 && num<20) {
+             return 30;
+           } else if (num>=20) {
+             return 60;
            } else{
              return 20;
            }
          };
 
+         console.log(t.values[0].values);
          console.log(colorBySize());
+         console.log(t.values[0].values)
      })
 
    })
