@@ -9,7 +9,36 @@
      minZoom: 9
    }).addTo(map);
 
-$.get('data/crime(east boston).csv', function(csvContents) {
-   var geoLayer = L.geoCsv(csvContents, {firstLineTitles: true, fieldSeparator: ','});
-   map.addLayer(geoLayer);
- });
+   d3.csv('../project2/data/crime(east boston).csv', function (err, data) {
+     console.log(data);
+     var newdata = data.map(function(t) {
+       return {
+         lat: t.Lat,
+         lng: t.Long,
+         offense: t['OFFENSE_CODE_GROUP'],
+       }
+     });
+     console.log(newdata);
+
+     newdata.forEach(function (t) {
+       L.circle([+t.lat, +t.lng],
+         {radius: 5,
+          color: colorByCode(t.offense),
+        }).addTo(map);
+
+         function colorByCode(str) {
+           if(str == 'Larceny' ){
+             return '#c12509'
+           } else if ( str == 'Drug Violation') {
+             return "#ffe81c"
+           } else if ( str == 'Vandalism') {
+             return "#7de07b"
+           } else{
+             return 'lightgray';
+           }
+         };
+
+     })
+
+
+   })

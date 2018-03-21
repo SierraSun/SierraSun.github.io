@@ -100,12 +100,12 @@
 
   <div class="intro-header">
     <div class="container">
-    <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Is East Boston a safe place to live?</h1>
+    <h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Crime in East Boston</h1>
     <h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">
-    How is the crime condition in East Boston? What is the most common crime in there?
-    How about comparing it to the other places in Boston?
-    What's the pattern of crime in East Boston?
-    Let us explore the story!</h3>
+    How prevalent is crime in East Boston? What is the most common crime?
+    How does it compare to other neighborhoods in Boston?
+    Is there a crime season in East Boston?
+    Let us explore!</h3>
     <h5 class="EastBoston_byline_home wow fadeIn" data-wow-delay="0.8s">By Sierra Sun</h5>
   </div>
       <!-- /.container -->
@@ -193,26 +193,26 @@
 
 <div id="Howis" class="container">
   <div class="column EastBoston">
-      <br><h2 class="EastBoston_head">How they compare with Boston?</h2>
-          <h4 class="EastBoston_head">The number of crime in East Boston compared to other places in Boston</h4>
+      <br><h2 class="EastBoston_head">Neighborhood comparison</h2>
+          <h4 class="EastBoston_head">The number of crimes in East Boston compared to other neighborhoods in Boston</h4>
   </div>
 </div>
 
 <div class="container">
-<h5 class="EastBoston_head" style="margin-top:20px">Larceny comparison</h5>
-<p style="margin-top:-20px">Data source: Analyze Boston &nbsp &nbsp Units:Number of records</p>
+<h5 class="EastBoston_head" style="margin-top:20px">Larceny </h5>
+<p style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston</p>
 <div id="chart1" style="height:500px">
     <script type="text/javascript" src="js/chart1.js"></script>
 </div>
 
-<h5 class="EastBoston_head" style="margin-top:20px">Drug Violation comparison</h5>
-<p style="margin-top:-20px">Data source: Analyze Boston &nbsp &nbsp Units:Number of records</p>
+<h5 class="EastBoston_head" style="margin-top:20px">Drug Violation </h5>
+<p style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston</p>
 <div id="chart2" style="height:500px">
     <script type="text/javascript" src="js/chart2.js"></script>
 </div>
 
-<h5 class="EastBoston_head" style="margin-top:20px">Vandalism comparison</h5>
-<p style="margin-top:-20px">Data source: Analyze Boston &nbsp &nbsp Units:Number of records</p>
+<h5 class="EastBoston_head" style="margin-top:20px">Vandalism </h5>
+<p style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston</p>
 <div id="chart3" style="height:500px">
     <script type="text/javascript" src="js/chart3.js"></script>
 </div>
@@ -232,7 +232,7 @@
 
       <div id="Howdo" >
         <div class="column EastBoston">
-            <br><h2 class="EastBoston_head">What's the pattern?</h2>
+            <br><h2 class="EastBoston_head">What’s the pattern?</h2>
                 <h4 class="EastBoston_head">Showing crime pattern sorted by time and location</h4>
         </div>
       </div>
@@ -240,7 +240,7 @@
 <!-- ——————————————————————pattern—————————————————————————— -->
 
 <h5 class="EastBoston_head" style="margin-top:20px">Crime sorted by time</h5>
-<p style="margin-top:-20px">Data source: Analyze Boston &nbsp &nbsp Units:Number of records</p>
+<p style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston </p>
 
 <div id="chart4" style="height:500px;margin-bottom:-160px">
     <script type="text/javascript" src="js/chart4.js"></script>
@@ -256,11 +256,9 @@ line-height:3rem">
 
 
 <h5 class="EastBoston_head" style="margin-top:20px">Crime sorted by location</h5>
-<p style="margin-top:-20px">Data source: Analyze Boston &nbsp &nbsp Units:Number of records</p>
+<p style="margin-top:-20px">Number of cases,&nbsp source: Analyze Boston</p>
 
- <div id="mapid" style="height:500px">
-  <script type="text/javascript" src="js/chart5.js"></script>
- </div>
+ <div id="mapid" style="height:500px"></div>
 
 
 
@@ -284,25 +282,17 @@ line-height:3rem">
 <script src="js/script.js"></script>
 <!-- StikyMenu -->
 <script src="js/stickUp.min.js"></script>
-<script type="text/javascript">
-  jQuery(function($) {
-  $(document).ready( function() {
-    $('.navbar-default').stickUp();
-
-  });
-  });
-
-</script>
 <!-- Smoothscroll -->
-<script type="text/javascript" src="js/jquery.corner.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.corner.js"></script> -->
 <script src="js/wow.min.js"></script>
 <script>
  new WOW().init();
 </script>
 <script src="js/classie.js"></script>
-<script src="js/uiMorphingButton_inflow.js"></script>
+<!-- <script src="js/uiMorphingButton_inflow.js"></script> -->
 <!-- Magnific Popup core JS file -->
 <script src="js/jquery.magnific-popup.js"></script>
-
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.js'></script>
+<script type="text/javascript" src="js/chart5.js"></script>
 </body>
 </html>
