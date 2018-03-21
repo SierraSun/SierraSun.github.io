@@ -2,6 +2,7 @@
  var map = L.map('mapid').setView([42.37, -71.03], 14);
 
  // load a tile layer
+
  L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
    {
      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
@@ -24,6 +25,7 @@
        L.circle([+t.lat, +t.lng],
          {radius: 5,
           color: colorByCode(t.offense),
+          opacity: 0.5
         }).addTo(map);
 
          function colorByCode(str) {
