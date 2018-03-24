@@ -1,12 +1,12 @@
 // initialize the map
- var map = L.map('mapid').setView([42.37, -71.03], 14);
+ var map = L.map('mapid').setView([42.374, -71.031], 14);
 
  // load a tile layer
 
  L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
    {
      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
-     maxZoom: 17,
+     maxZoom: 18,
      minZoom: 13
    }).addTo(map);
 
@@ -17,8 +17,8 @@
          lng: t.Long,
          offense: t['OFFENSE_CODE_GROUP']
        }
+
      });
-     console.log(newdata);
 
      var nested_data = d3.nest()
      .key(function(t){return t.lat;})
@@ -27,43 +27,60 @@
      .rollup(function(leaves){return leaves.length;})
      .entries(newdata)
 
+
+
      console.log(nested_data);
 
      nested_data.forEach(function (t) {
        t.values[0].values.forEach(function(tt){
-       L.circle([+t.key,+t.values[0].key],
+        L.circle([+t.key,+t.values[0].key],
          {radius: colorBySize(tt.value),
-          color: colorByCode(tt.key),
-          opacity: 0.7,
-        }).addTo(map);})
+          fillColor: colorByCode(tt.key),
+          fillOpacity:0.6,
+          stroke:false
+        }).bindPopup(function (layer) {
+          return tt.key+":"+"&nbsp"+tt.value;}).addTo(map);
+       })
+
+
 
          function colorByCode(str) {
            if(str == 'Larceny' ){
-             return '#c12509'
+             return '#ef5209';
            } else if ( str == 'Drug Violation') {
-             return "#ffe81c"
+             return "#ff9696";
            } else if ( str == 'Vandalism') {
-             return "#7de07b"
+             return "#660202";
            } else{
-             return 'lightgray';
+             return "rgb(255, 255, 255,0)";
            }
          };
 
          function colorBySize(num) {
-           if(num>=1 && num<10){
+           if(num>=1 && num<=2){
              return 10;
-           } else if (num>=10 && num<20) {
-             return 30;
-           } else if (num>=20) {
-             return 60;
-           } else{
+           } else if (num>=3 && num<=4) {
+             return 15;
+           } else if (num>=5&& num<=6) {
              return 20;
-           }
+           }else if (num>=7&& num<=8) {
+             return 25;
+           }else if (num>=9 && num<=10) {
+             return 30;
+           }else if (num>=11 && num<=12) {
+             return 35;
+           } else if (num>=13&& num<=14) {
+             return 40;
+           }else if (num>=15&& num<=16) {
+             return 45;
+           }else if (num>=17&& num<=18) {
+             return 50;
+           }else{
+               return 55;
+             }
          };
 
-         console.log(t.values[0].values);
-         console.log(colorBySize());
-         console.log(t.values[0].values)
+         // console.log(t.values[0].values)
      })
 
-   })
+   });
