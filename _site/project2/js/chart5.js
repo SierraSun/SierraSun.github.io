@@ -36,13 +36,23 @@
         L.circle([+t.key,+t.values[0].key],
          {radius: colorBySize(tt.value),
           fillColor: colorByCode(tt.key),
-          fillOpacity:0.6,
+          fillOpacity: opacityByCode(tt.key),
           stroke:false
         }).bindPopup(function (layer) {
           return tt.key+":"+"&nbsp"+tt.value;}).addTo(map);
        })
 
-
+        function opacityByCode(str) {
+          if(str == 'Larceny' ){
+            return 0.6;
+          } else if ( str == 'Drug Violation') {
+            return 0.6;
+          } else if ( str == 'Vandalism') {
+            return 0.6;
+          } else{
+            return 0;
+          }
+        };
 
          function colorByCode(str) {
            if(str == 'Larceny' ){
@@ -52,7 +62,7 @@
            } else if ( str == 'Vandalism') {
              return "#660202";
            } else{
-             return "rgb(255, 255, 255,0)";
+             return "#ffffff";
            }
          };
 
