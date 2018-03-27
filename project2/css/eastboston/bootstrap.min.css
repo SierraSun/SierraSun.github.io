@@ -478,6 +478,11 @@ p {
     font-size: 22.5px;
   }
 }
+@media (min-width:300px){
+  .lead {
+    font-size: 22.5px;
+  }
+}
 small,
 .small {
   font-size: 85%;
