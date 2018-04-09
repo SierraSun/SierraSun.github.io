@@ -183,6 +183,22 @@ h1.EastBoston_head {
       opacity: 0.2;
       margin-top: -370px;
   }
+  .grid{
+    display:grid;
+  	/*column-count: 2;*/
+  	grid-template-columns: 1fr 1fr;
+  	grid-template-rows: 100%;
+  	padding:10px;
+  	grid-column-gap:20px;
+  }
+  .grid2{
+    display:grid;
+  	/*column-count: 2;*/
+  	grid-template-columns: 0.3fr 0.7fr;
+  	grid-template-rows: 100%;
+  	padding:10px;
+  	grid-column-gap:20px;
+  }
 }
 
 /* Images
