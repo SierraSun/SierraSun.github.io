@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>The Margins-Article</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/EastBoston_styles.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" rel="stylesheet" />
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <script src="queue.min.js"></script>
+    <script src="d3.v4.2.6.min.js"></script>
+    <script src="./jquery-3.2.1.js"></script>
+    <script src="js/echarts.js"></script>
+    <script src="https://cdn-webgl.wrld3d.com/wrldjs/dist/latest/wrld.js"></script>
+
+
+</head>
+<body>
+
+<!-- Hamburger menu
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <nav role="navigation" class="EastBoston_nav" >
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+
+    <!--
+    Some spans to act as a hamburger.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+
+    <ul id="menu">
+        <a href="#" ><li style="font-size:4rem">Article 1</li></a>
+        <a href="#"><li style="font-size:4rem">Article 2</li></a>
+        <a href="#"><li style="font-size:4rem">Article 3</li></a>
+        <a href="#"><li style="font-size:4rem">Article 4</li></a>
+        <a href="#"><li style="font-size:4rem">Article 5</li></a>
+        <a href="#"><li style="font-size:4rem">Article 6</li></a>
+
+    </ul>
+  </div>
+</nav>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <div class="intro-header">
+    <div class="words">
+      <h1 id="titeltext" class="EastBoston_head">Blue Line Blues</h1>
+      <p id="titeltext">Many in Boston are excited and hopeful about having Amazon’s HQ2 in East Boston, but others are worried that an infusion of 50,000 employees could exacerbate traffic problems. In this article, we analyze the current ridership on the Blue Line, speculate as to how 50,000 additional passengers will affect the system, and then attempt to propose some solutions.</p>
+
+      <h5 class="EastBoston_byline">By Ziyi Zhao, Kate Terrado, Siyuan Sun, Qingyue Li</h5>
+      </div>
+      <div class="colorbox"></div>
+
+  </div>
+
+
+
+    <div class="row">
+      <div class="column EastBoston">
+
+<!-- ––––––––––––––––––––––PartOne–––––––––––––––––––––––––––– -->
+
+        <div class="partone">
+
+            <div class="colorbox1"></div>
+
+            <div class="photo1">
+             <img src="images/lieche.jpg" alt="" class="responsive">
+            </div>
+
+            <h2 class="EastBoston_head" id="smallone">The current situation of the blue line</h2>
+
+            <div class="textbox1">
+              <p id="s_one">Boston’s Massachusetts Bay Transit Authority is the <span style="color: #1f58ca"><b>4th busiest</b></span> subway system in the United States, after New York, Washington, and Chicago. In 2016, the system <span style="color: #1f58ca"><b>averaged 1,277,200 passengers per weekday</b></span>.</p>
+            </div>
+
+            <div style="text-align:center">
+              <img src="images/finger.svg" style="margin-bottom:1%;width:250px;">
+            </div>
+
+              <div id="chart1" style="height:400px;margin-bottom:10px" >
+                 <script type="text/javascript" src="js/chart1.js"></script>
+              </div>
+
+            <div class="textbox1">
+              <p id="s_one_1">The Blue Line runs from <span style="color: #1f58ca"><b>Bowdoin station</b></span> in downtown Boston to East Boston and Revere on the inner North Shore, where it terminates at <span style="color:#1f58ca"><b>Wonderland</b></span>. In 1965, the line was designated blue to represent water, as the line passes under the Boston Harbor and travels near the coast for much of its length.</p>
+           </div>
+             <!-- ___________________subway chart_________________ -->
+            <div style="text-align:center">
+            <img src="images/map1.svg" alt="" style="width:80%" class="responsive">
+            </div>
+
+            <div class="textbox1">
+              <p id="s_one_1">You can use the interactive map below to explore the surroundings of Suffolk Down where Amazon HQ2 proposed to be built.</p>
+            </div>
+          <!-- _________  map___________________ -->
+            <div style="text-align:center">
+            <iframe src="https://maps.wrld3d.com/embed/?mapscene=7210b1e" width="90%" height="400" text-align="center" frameborder="0" style="border:0" allowfullscreen></iframe>
+           </div>
+
+            <div class="textbox1">
+              <p id="s_one_2">In a typical weekday, the Blue Line sees <span style="color:#1f58ca"><b>63,225</b></span> passengers from <span style="color: #1f58ca"><b>5AM</b></span> through <span style="color: #1f58ca"><b>1AM</b></span> the next morning. From <span style="color: #1f58ca"><b>2007 to 2013</b></span> , it has seen a <span style="color:#1f58ca">&nbsp<b>21%</b></span>&nbsp increase. See the chart below
+                (datasource:<a target="_blank" href="https://d3044s2alrsxog.cloudfront.net/uploadedfiles/documents/2014%20BLUEBOOK%2014th%20Edition(1).pdf">Ridership and service statistic</a>):</p>
+            </div>
+
+            <div id="chart2" style="width:100%;height:300px;margin-bottom:10px" >
+                 <script type="text/javascript" src="js/chart2.js"></script>
+            </div>
+
+
+            </div>
+
+        </div>
+      </div>
+
+<!-- –––––––––––––––––––––––PartTwo––––––––––––––––––––––––––– -->
+
+        <div class="parttwo">
+
+            <div class="colorbox2"></div>
+
+            <div class="photo2">
+             <img src="images/congestion.jpg" alt="" class="responsive">
+            </div>
+
+            <h2 class="EastBoston_head" id="smalltwo">What if we add 50,000 people on Blue Line</h2>
+
+            <div class="textbox2">
+
+              <p id="s_two">The light blue color shows number of Blueline average weekday ridership, and dark blue color shows if we add 50,000 people, what situation we will have.</p>
+
+              <div id="chart3" style="height:200px;margin-bottom:10px" >
+                   <script type="text/javascript" src="js/chart3.js"></script>
+              </div>
+
+            </div>
+
+        </div>
+
+<!-- –––––––––––––––––––––––PartThree––––––––––––––––––––––––––– -->
+
+        <div class="partthree">
+
+            <div class="colorbox3"></div>
+
+            <div class="photo3">
+             <img src="images/amazon.jpg" alt="" class="responsive">
+            </div>
+
+            <h2 class="EastBoston_head" id="smallthree">What will happen if Amazon hires thousands of interns for HQ2</h2>
+
+            <div class="textbox3">
+
+              <h3 class="EastBoston_head" id="smallthree-1">Why Boston? Why Interns and New graduates Matter?</h3>
+
+              <p id="s_three">Boston is the city has the outstanding reputation in higher education. From the article “The Top 10 US Cities for Entrepreneurs and Start-Ups in 2018”, Boston has the highest percentage of the population aged 25 to 34 holding a bachelor’s degree or higher in US.
+              <br>
+              <br>How to get thousands of new graduates from home to Amazon is not the new challenge. In Seattle, where is the Amazon HQ located, 2017 have more than <span style="color:#1f58ca"><b>3,000</b></span> interns and new graduates need to daily communities from their dorms or apartments to Amazon Headquarters.
+              <br>
+              <br>If Amazon HQ2 located in East Boston – Suffolk Downs, we can predict at least the same amounts interns and new graduates Amazon will hire in Boston.
+              <br>
+              <br>In addition, interns are <span style="color:#1f58ca"><b>highly rely on public transportation as daily community, and Amazon provides convenient public transportation options will encourage new graduates to accept the job offer</b></span>.</p>
+
+              <div class="svgBox3"></div>
+
+              <h3 class="EastBoston_head" id="smallthree-2">Imaging Thousands Interns from universities to Suffolk Down</h3>
+
+              <h4 class="EastBoston_head" id="smallthree-3">From Interns point of view:</h4>
+
+              <div class="photobox"></div>
+
+              <h4 class="EastBoston_head" id="smallthree-3">Possible Solution:</h4>
+
+              <p id="s_three">If we can add <span style="color: #1f58ca"><b>a line bettwen red line and blue line</b></span>, that will save more time on train.</p>
+
+              <div class="photobox-1"></div>
+
+              <h4 class="EastBoston_head" id="smallthree-3">From daily commuters point of view:</h4>
+
+              <p id="s_three">Current Conditions</p>
+
+              <div class="photobox-2"></div>
+
+              <p id="s_three">Future Conditions</p>
+
+              <div class="photobox-3"></div>
+
+              <h4 class="EastBoston_head" id="smallthree-3">Possible Solution:</h4>
+
+              <p id="s_three">Add two more trains per hour to solve the congestional condition in carriages.</p>
+
+              <div class="photobox-4"></div>
+
+            </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+<h6 class="EastBoston_footer"><span class="EastBoston_footer">Visualizing Eastie</span> is a project of the <a href="https://www.northeastern.edu/visualization/">Information Design and Visualization program</a> at Northeastern University. © 2018</h6>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+<script src="js/scroll.js"></script>
+<script src="index.js"></script>
+
+</html>
