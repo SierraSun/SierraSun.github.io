@@ -22,7 +22,7 @@ option = {
     toolbox: {
     },
     legend: {
-        data:['Rider per mile','Avg. weekday ridership']
+        data:['Riders per mile','Average weekday ridership']
     },
     xAxis: {
             type: 'category',
@@ -41,7 +41,7 @@ option = {
     yAxis: [
         {
             type: 'value',
-            name: 'Rider per mile',
+            name: 'Riders per mile',
             min: 0,
             position: 'right',
             axisLine: {
@@ -56,7 +56,7 @@ option = {
         {},
         {
             type: 'value',
-            name: 'Avg. weekday ridership',
+            name: 'Average weekday ridership',
             min: 0,
             position: 'left',
             axisLine: {
@@ -71,12 +71,12 @@ option = {
     ],
     series: [
         {
-            name:'Rider per mile',
+            name:'Riders per mile',
             type:'bar',
             data:[38276, 7292, 6400, 14539]
         },
         {
-            name:'Avg. weekday ridership',
+            name:'Average weekday ridership',
             type:'line',
             yAxisIndex: 2,
             data:[8918400, 749700, 748800, 552500]

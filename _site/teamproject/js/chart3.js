@@ -10,7 +10,7 @@ option = {
         }
     },
     legend: {
-        data: ['Subway Avg Weekday ridership', 'Adding 50000 people'],
+        data: ['Average Weekday Ridership', 'Amazon Emplyees'],
         textStyle:{
             fontFamily:'BentonSansCond-regular'
         }
@@ -41,7 +41,7 @@ option = {
     },
     series: [
         {
-            name: 'Subway Avg Weekday ridership',
+            name: 'Average Weekday Ridership',
             type: 'bar',
             stack: '总量',
             label: {
@@ -56,7 +56,7 @@ option = {
             }
         },
         {
-            name: 'Adding 50000 people',
+            name: 'Amazon Emplyees',
             type: 'bar',
             stack: '总量',
             label: {
@@ -67,7 +67,7 @@ option = {
             },
             data: [50000],
             itemStyle:{
-                color:'#6495ED'
+                color:'#f2a41c'
             }
         }
     ]}

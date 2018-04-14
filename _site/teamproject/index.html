@@ -15,7 +15,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -24,8 +24,7 @@
   <link rel="stylesheet" href="css/EastBoston_styles.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.1/leaflet.css" rel="stylesheet" />
-
-
+  
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -74,7 +73,7 @@
   <div class="intro-header">
     <div class="words">
       <h1 id="titeltext" class="EastBoston_head">Blue Line Blues</h1>
-      <p id="titeltext">Many in Boston are excited and hopeful about having Amazon’s HQ2 in East Boston, but others are worried that an infusion of 50,000 employees could exacerbate traffic problems. In this article, we analyze the current ridership on the Blue Line, speculate as to how 50,000 additional passengers will affect the system, and then attempt to propose some solutions.</p>
+      <p id="titeltext">Many in Boston are excited and hopeful about having Amazon’s HQ2 in East Boston, but others are worried that an infusion of 50,000 employees could exacerbate traffic problems. Transportation has long played a strong role in the shaping of East Boston. Ships, subways, and planes all contribute to the activity of the neighborhood. In this article, we analyze the current ridership on the Blue Line, speculate as to how 50,000 additional passengers will affect the system, and attempt to propose some solutions.</p>
 
       <h5 class="EastBoston_byline">By Ziyi Zhao, Kate Terrado, Siyuan Sun, Qingyue Li</h5>
       </div>
@@ -104,7 +103,7 @@
             </div>
 
             <div style="text-align:center">
-              <img src="images/finger.svg" style="margin-bottom:1%;width:250px;">
+              <img src="images/finger.svg" style="margin-bottom:1%;width:200px;">
             </div>
 
               <div id="chart1" style="height:400px;margin-bottom:10px" >
@@ -115,12 +114,26 @@
               <p id="s_one_1">The Blue Line runs from <span style="color: #1f58ca"><b>Bowdoin station</b></span> in downtown Boston to East Boston and Revere on the inner North Shore, where it terminates at <span style="color:#1f58ca"><b>Wonderland</b></span>. In 1965, the line was designated blue to represent water, as the line passes under the Boston Harbor and travels near the coast for much of its length.</p>
            </div>
              <!-- ___________________subway chart_________________ -->
-            <div style="text-align:center">
-            <img src="images/map1.svg" alt="" style="width:80%" class="responsive">
-            </div>
+
+           <div style="text-align:center;margin-bottom:30px">
+            <img id="myImg" src="images/map1.svg" alt="Blue line map" width="50%">
+
+              <!-- The Modal -->
+              <div id="myModal" class="modal">
+
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption"></div>
+              </div>
+           </div>
 
             <div class="textbox1">
-              <p id="s_one_1">You can use the interactive map below to explore the surroundings of Suffolk Down where Amazon HQ2 proposed to be built.</p>
+              <p id="s_one_1">See what’s around Suffolk Downs, Amazon’s proposed site for HQ2.(Click View Full Map and try to search Suffolk Downs)</p>
             </div>
           <!-- _________  map___________________ -->
             <div style="text-align:center">
@@ -128,7 +141,7 @@
            </div>
 
             <div class="textbox1">
-              <p id="s_one_2">In a typical weekday, the Blue Line sees <span style="color:#1f58ca"><b>63,225</b></span> passengers from <span style="color: #1f58ca"><b>5AM</b></span> through <span style="color: #1f58ca"><b>1AM</b></span> the next morning. From <span style="color: #1f58ca"><b>2007 to 2013</b></span> , it has seen a <span style="color:#1f58ca">&nbsp<b>21%</b></span>&nbsp increase. See the chart below
+              <p id="s_one_2">In a typical weekday, the Blue Line sees <span style="color:#1f58ca"><b>63,225</b></span> passengers from <span style="color: #1f58ca"><b>5AM</b></span> through <span style="color: #1f58ca"><b>1AM</b></span> the next morning in 2017. From <span style="color: #1f58ca"><b>2007 to 2013</b></span> , it has seen a <span style="color:#1f58ca">&nbsp<b>21%</b></span>&nbsp increase.
                 (datasource:<a target="_blank" href="https://d3044s2alrsxog.cloudfront.net/uploadedfiles/documents/2014%20BLUEBOOK%2014th%20Edition(1).pdf">Ridership and service statistic</a>):</p>
             </div>
 
@@ -152,11 +165,11 @@
              <img src="images/congestion.jpg" alt="" class="responsive">
             </div>
 
-            <h2 class="EastBoston_head" id="smalltwo">What if we add 50,000 people on Blue Line</h2>
+            <h2 class="EastBoston_head" id="smalltwo">Adding 50,000 commuters to the Blue Line</h2>
 
             <div class="textbox2">
 
-              <p id="s_two">The light blue color shows number of Blueline average weekday ridership, and dark blue color shows if we add 50,000 people, what situation we will have.</p>
+              <p id="s_two">The light blue color indicates the average weekday Blue Line ridership. The orange color nearly doubles the total ridership by adding 50,000 additional commuters.</p>
 
               <div id="chart3" style="height:200px;margin-bottom:10px" >
                    <script type="text/javascript" src="js/chart3.js"></script>
@@ -180,68 +193,96 @@
 
             <div class="textbox3">
 
-              <h3 class="EastBoston_head" id="smallthree-1">Why Boston? Why Interns and New graduates Matter?</h3>
+              <h3 class="EastBoston_head" id="smallthree-1">Taking blue line is the only way to get to work. </h3>
 
-              <p id="s_three">Boston is the city has the outstanding reputation in higher education. From the article “The Top 10 US Cities for Entrepreneurs and Start-Ups in 2018”, Boston has the highest percentage of the population aged 25 to 34 holding a bachelor’s degree or higher in US.
-              <br>
-              <br>How to get thousands of new graduates from home to Amazon is not the new challenge. In Seattle, where is the Amazon HQ located, 2017 have more than <span style="color:#1f58ca"><b>3,000</b></span> interns and new graduates need to daily communities from their dorms or apartments to Amazon Headquarters.
-              <br>
-              <br>If Amazon HQ2 located in East Boston – Suffolk Downs, we can predict at least the same amounts interns and new graduates Amazon will hire in Boston.
-              <br>
-              <br>In addition, interns are <span style="color:#1f58ca"><b>highly rely on public transportation as daily community, and Amazon provides convenient public transportation options will encourage new graduates to accept the job offer</b></span>.</p>
+              <p id="s_three">Boston has an outstanding reputation for higher education, and has the highest percentage of 25-34 year olds with a bachelor’s degree or higher in the United States.
+
+Getting interns from their homes to Amazon HQ is not a new challenge. In Seattle, where Amazon HQ1 is located, there are <span style="color: #1f58ca"><b>more than 3,000 interns</b></span> that commute daily from their residences to HQ.
+
+If Amazon’s HQ2 ends up in East Boston’s Suffolk Downs, we can predict that at least the same amount of interns would be hired. Interns highly rely on public transportation as daily commuters, and access to this transportation will be a key feature in attracting the best and brightest.
+<br></br><span style="color: #1f58ca"><b>However, no matter where the interns are, if they want to get to work, they should take blue line!</b></span></p>
             </div>
-              <div style="text-align:center">
-              <embed src="images/try.png" alt="" style="width:90%;" class="responsive">
-              </div>
-           <div class="textbox3">
-              <h3 class="EastBoston_head" id="smallthree-2">Imaging Thousands Interns from universities to Suffolk Down</h3>
 
-              <h4 class="EastBoston_head" id="smallthree-3">From Interns point of view:</h4>
+              <div style="text-align:center;margin-bottom:30px">
+               <img id="myImg2" src="images/try.png" alt="One way to work" width="50%">
+
+                 <!-- The Modal -->
+                 <div id="myModal2" class="modal2">
+
+                   <!-- The Close Button -->
+                   <span class="close2">&times;</span>
+
+                   <!-- Modal Content (The Image) -->
+                   <img class="modal-content2" id="img02">
+
+                   <!-- Modal Caption (Image Text) -->
+                   <div id="caption2"></div>
+                 </div>
+              </div>
+
+
+           <div class="textbox3">
+              <h3 class="EastBoston_head" id="smallthree-2">Commuting from Universities to Suffolk Downs</h3>
+
               <p id="s_three">From  <span style="color: #1f58ca"><b>MIT</b></span> to <span style="color: #1f58ca"><b>Suffolk Downs</b></span></p>
               <div class="grid">
-                <embed src="images/time1.svg" alt="" class="responsive">
-                <embed src="images/time2.svg" alt="" class="responsive">
+                <embed src="images/time1.svg" alt="" style="width:55%;" class="responsive">
+                <embed src="images/time2.svg" alt="" style="width:55%;" class="responsive">
               </div>
               <p id="s_three">From  <span style="color: #1f58ca"><b>Northeastern</b></span> to <span style="color: #1f58ca"><b>Suffolk Downs</b></span></p>
               <div class="grid">
-                <embed src="images/time3.svg" alt="" class="responsive">
-                <embed src="images/time4.svg" alt="" class="responsive">
+                <embed src="images/time3.svg" alt="" style="width:55%;" class="responsive">
+                <embed src="images/time4.svg" alt="" style="width:55%;" class="responsive">
               </div>
 
-              <h4 class="EastBoston_head" id="smallthree-3">Possible Solution:</h4>
+              <div style="text-align:center;margin-bottom:30px">
+               <img id="myImg3" src="images/map2_1.svg" alt="Possible solution" width="80%">
 
-              <p id="s_three">If we can add <span style="color: #1f58ca"><b>a line bettwen red line and blue line</b></span>, that will save more time on train.</p>
+                 <!-- The Modal -->
+                 <div id="myModal3" class="modal3">
 
-              <div style="text-align:center">
-              <img src="images/map2_1.svg" alt="" style="width:100%;margin-bottom:30px" class="responsive">
+                   <!-- The Close Button -->
+                   <span class="close3">&times;</span>
+
+                   <!-- Modal Content (The Image) -->
+                   <img class="modal-content3" id="img03">
+
+                   <!-- Modal Caption (Image Text) -->
+                   <div id="caption3"></div>
+                 </div>
               </div>
 
 
-              <h4 class="EastBoston_head" id="smallthree-3">From daily commuters point of view:</h4>
 
-              <p id="s_three">Current Conditions</p>
+              <p id="s_three"><span style="color: #1f58ca"><b>Current Conditions</b></span></p>
 
 
               <div class="grid2">
-              <img src="images/people1.svg" alt="" style="width:100%;margin-top:30px" align="middle" class="responsive">
+              <img src="images/people1.svg" alt="" style="width:55%;" align="middle" class="responsive">
               <img src="images/before condition.svg" alt="" style="width:100%;" class="responsive">
             </div>
 
-              <p id="s_three">Future Conditions</p>
+              <p id="s_three"><span style="color: #1f58ca"><b>Future Conditions</b></span></p>
 
-              <div class="grid2">
-              <img src="images/people2.svg" alt="" style="width:100%;margin-top:30px" align="middle" class="responsive">
+              <div class="grid2" style="margin-bottom:30px">
+              <img src="images/people2.svg" alt="" style="width:55%;" align="middle" class="responsive">
               <img src="images/after condition.svg" alt="" style="width:100%;" class="responsive">
               </div>
 
 
-              <h4 class="EastBoston_head" id="smallthree-3">Possible Solution:</h4>
+              <p id="s_three"><span style="color: #1f58ca"><b>Possible Solution:</b></span></p>
 
-              <p id="s_three">Adding <span style="color: #1f58ca"><b>four more carriages</b></span> to each train to solve the congestional condition in carriages.</p>
+              <p id="s_three">Adding <span style="color: #1f58ca"><b>four more cars</b></span> to each train can alleviate the congestion.</p>
+
+
+              <div class="grid3" style="margin-bottom:30px">
+              <img src="images/car1.svg" alt="" style="width:100%;" align="middle" class="responsive">
+              <img src="images/car2.svg" alt="" style="width:100%;" align="middle" class="responsive">
+              <img src="images/car3.svg" alt="" style="width:100%;" align="middle" class="responsive">
+              <img src="images/car4.svg" alt="" style="width:100%;" align="middle" class="responsive">
               </div>
-              <div style="text-align:center">
-              <img src="images/after add 4 carriage.svg" alt="" style="width:100%;" class="responsive">
-              </div>
+
+            </div>
             </div>
 
         </div>
@@ -262,5 +303,6 @@
 
 <script src="js/scroll.js"></script>
 <script src="index.js"></script>
-
+<script src="js/picture.js"></script>
+<script src="js/picture2.js"></script>
 </html>

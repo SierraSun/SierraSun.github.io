@@ -225,7 +225,7 @@ a:active {
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-h6.EastBoston_footer {
+/* h6.EastBoston_footer {
     font-family: "GrifoL-Bold","Georgia",serif;
     font-size: 2rem;
     color: #666;
@@ -234,7 +234,7 @@ h6.EastBoston_footer {
     letter-spacing: 0;
     border-top: 1px solid #666;
     padding: 20px;
-}
+} */
 
 span.EastBoston_footer {
     color: orangered;

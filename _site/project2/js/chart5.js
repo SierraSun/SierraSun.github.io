@@ -10,15 +10,15 @@
      minZoom: 13
    }).addTo(map);
 
-   d3.csv('../project2/data/crime(east boston).csv', function (err, data) {
+   d3.csv('data/crime.csv', function (err, data) {
      var newdata = data.map(function(t) {
-       return {
-         lat: t.Lat,
-         lng: t.Long,
-         offense: t['OFFENSE_CODE_GROUP']
-       }
+          return {
+            lat: t.Lat,
+            lng: t.Long,
+            offense: t['OFFENSE_CODE_GROUP']
+          }
 
-     });
+        });
 
      var nested_data = d3.nest()
      .key(function(t){return t.lat;})
