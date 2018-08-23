@@ -156,8 +156,35 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 5px;
   h5 { font-size: 2.4rem; }
   h6 { font-size: 1.5rem; }
 } */
-/* phone */
-@media (min-width: 300px) {
+
+/* computer */
+@media (min-width: 350px) {
+  .content-section-a{
+    margin-top:80px;
+  }
+  .rotate{
+    width:50%;
+  }
+  #ro{
+    width:80%;
+  }
+  #picture_h5{
+    font-size:1.5em;
+  }
+  .picture_p{
+    font-size:15px;
+  }
+  .zheng{
+    font-size:1.8rem;
+    font-family:'BentonSansCond-regular';
+    color:#2c3e50;
+    letter-spacing:.1rem;
+    line-height:3rem;
+  }
+  .last{
+    margin-bottom:1%;
+    width:300px;
+  }
   h1 { font-size: 5.5rem;
     margin-top: 10%;
     line-height:1.2;
@@ -179,6 +206,79 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 5px;
        color:black;}
   h5 { font-family: "BentonSansCond-Bold","Helvetica-Bold",sans-serif;
   font-size: 1.6rem;
+  line-height: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+   text-align: left;}
+  h6 {  font-family: "GrifoL-Bold","Georgia",serif;
+        font-size: 1.5rem;
+        color: #666;
+        text-transform: none;
+        text-align: center;
+        letter-spacing: 0;
+        border-top: 1px solid #666;
+        padding: 20px;
+    }
+    span.EastBoston_footer {
+        color: orangered;
+    }
+  }
+}
+
+p {
+  margin-top: 0; }
+/* phone */
+@media (max-width: 350px) {
+  .content-section-a{
+    margin-top:0px;
+  }
+  .rotate{
+    width:30%;
+  }
+  .last{
+    margin-bottom:1%;
+    width:250px;
+  }
+  #name{
+    font-size:1.3rem;
+  }
+  #ro{
+    width:50%;
+  }
+  .picture_p{
+    font-size:12px;
+  }
+  #picture_h5{
+    font-size:1em;
+  }
+  .zheng{
+    font-size: 1.5rem;
+    letter-spacing: .1rem;
+    font-family:  "BentonSansCond-Regular","Helvetica",sans-serif;
+    color:#2c3e50;
+    text-align: left;
+  }
+  h1 { font-size: 3rem;
+    margin-top: -28%;
+    line-height:1.2;
+    letter-spacing: -.1rem;
+    font-family: "GrifoL-Bold","Georgia",serif;
+    text-align:left;
+  }
+  h2 { font-size: 3rem;
+       margin-top: 1.5rem;
+       font-family: "BentonSansCond-Bold","Helvetica-Bold",sans-serif;
+       text-align: center;
+     }
+  h3 { font-size: 1.5rem; }
+  h4 { font-size: 1.2rem;
+       margin-top: -2rem;
+       letter-spacing: .1rem;
+       font-family: "BentonSansCond-Regular","Helvetica",sans-serif;
+       text-align: center;
+       color:black;}
+  h5 { font-family: "BentonSansCond-Bold","Helvetica-Bold",sans-serif;
+  font-size: 1rem;
   line-height: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;

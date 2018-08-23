@@ -124,12 +124,12 @@
     How does it compare to other neighborhoods in Boston?
     Is there a crime season in East Boston?
     Let us explore!</h3>
-    <h5 class="EastBoston_byline_home wow fadeIn" data-wow-delay="0.8s">By Sierra Sun</h5>
+    <h5 id="name" class="EastBoston_byline_home wow fadeIn" data-wow-delay="0.8s">By Sierra Sun</h5>
   </div>
       <!-- /.container -->
   <div class="col-xs-12 text-center abcen wow fadeIn">
     <div class="button_down">
-      <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="img/icon/circle.png" style="height:30%" alt=""> </a>
+      <a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
     </div>
   </div>
   </div>
@@ -149,7 +149,7 @@
     <div class="row">
 
       <div class="col-sm-4 wow fadeInDown text-center animated animated" style="visibility: visible;">
-        <img class="rotate" src="css/images/icon2_1.svg" alt="" style="width:50%">
+        <img class="rotate" src="css/images/icon2_1.svg" alt="">
         <h5 style="text-align:center;margin-top:10px;margin-bottom:40px">Drug Violation</h5>
 
 
@@ -157,14 +157,14 @@
       </div><!-- /.col-lg-4 -->
 
       <div class="col-sm-4 wow fadeInDown text-center animated animated" style="visibility: visible;">
-        <img class="rotate" src="css/images/icon3_1.svg" alt="" style="width:80%">
+        <img id="ro" class="rotate" src="css/images/icon3_1.svg" alt="">
          <h5 style="text-align:center;margin-top:10px;margin-bottom:40px">Vandalism</h5>
 
          <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
       </div><!-- /.col-lg-4 -->
 
       <div class="col-sm-4 wow fadeInDown text-center animated animated" style="visibility: visible;">
-        <img class="rotate" src="css/images/icon1_1.svg" alt="" style="width:50%">
+        <img class="rotate" src="css/images/icon1_1.svg" alt="">
         <h5 style="text-align:center;margin-top:10px;margin-bottom:40px">Larceny</h5>
 
       </div><!-- /.col-lg-4 -->
@@ -175,7 +175,7 @@
 <!-- ————————————————————————— most common crime —————————————————— -->
     <div class="container">
 
-      <div id="useit" class="content-section-a" style="margin-top:80px;">
+      <div id="useit" class="content-section-a">
          <div class="row">
          <div class="col-sm-6 pull-right wow fadeInRightBig animated animated" style="visibility: visible; animation-name: fadeInRightBig;">
                 <img class="img-responsive " src="css/images/newsgai.svg" alt="">
@@ -217,8 +217,8 @@
 </div>
 
 <div class="container">
-<h5 class="EastBoston_head" style="margin-top:20px">Larceny </h5>
-<p style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston</p>
+<h5 id="picture_h5" class="EastBoston_head" style="margin-top:20px">Larceny </h5>
+<p class="picture_p" style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston</p>
 <div style="text-align:center">
   <img src="css/images/finger.svg" style="margin-bottom:1%;width:250px;">
 </div>
@@ -226,8 +226,8 @@
     <script type="text/javascript" src="js/chart1.js"></script>
 </div>
 
-<h5 class="EastBoston_head" style="margin-top:20px">Drug Violation </h5>
-<p style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston</p>
+<h5 id="picture_h5" class="EastBoston_head" style="margin-top:20px">Drug Violation </h5>
+<p class="picture_p" style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston</p>
 <div style="text-align:center">
   <img src="css/images/finger.svg" style="margin-bottom:1%;width:250px;">
 </div>
@@ -235,8 +235,8 @@
     <script type="text/javascript" src="js/chart2.js"></script>
 </div>
 
-<h5 class="EastBoston_head" style="margin-top:20px">Vandalism </h5>
-<p style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston</p>
+<h5 id="picture_h5" class="EastBoston_head" style="margin-top:20px">Vandalism </h5>
+<p class="picture_p" style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston</p>
 <div style="text-align:center">
   <img src="css/images/finger.svg" style="margin-bottom:1%;width:250px;">
 </div>
@@ -266,8 +266,8 @@
 
 <!-- ——————————————————————pattern—————————————————————————— -->
 
-<h5 class="EastBoston_head" style="margin-top:20px">Crime sorted by time</h5>
-<p style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston </p>
+<h5 id="picture_h5" class="EastBoston_head" style="margin-top:20px">Crime sorted by time</h5>
+<p class="picture_p" style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston </p>
 <div style="text-align:center">
   <img src="css/images/finger2.svg" style="margin-bottom:1%;width:250px;">
 </div>
@@ -276,18 +276,17 @@
 </div>
 
 
-<p class="zheng" style="font-size:1.8rem;font-family:'BentonSansCond-regular';color:black;letter-spacing:.1rem;
-line-height:3rem">
+<p class="zheng">
   As we can see from the chart, more crime happened during August to January. Especially in August,
   vandalism went peak to 82 cases. Drug violation happened most in October, 68 cases have been recorded.
   While Larceny's cases kept almost at the same level around 50 from August to January.
 </p>
 
 
-<h5 class="EastBoston_head" style="margin-top:20px">Crime sorted by location</h5>
-<p style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston</p>
+<h5 id="picture_h5" class="EastBoston_head" style="margin-top:20px">Crime sorted by location</h5>
+<p class="picture_p" style="margin-top:-20px">Number of cases, &nbsp source: Analyze Boston</p>
 <div style="text-align:center">
-  <img src="css/images/finger3.svg" style="margin-bottom:1%;width:300px;">
+  <img class="last" src="css/images/finger3.svg">
 </div>
  <div id="mapid" style="height:500px;"></div>
 
