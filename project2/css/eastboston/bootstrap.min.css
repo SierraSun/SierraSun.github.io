@@ -304,7 +304,20 @@ figure {
   margin: 0;
 }
 img {
+vertical-align: middle;
+}
+
+@media (min-width: 350px){
+.img_scroll {
   vertical-align: middle;
+  height:70px;
+}
+}
+@media (max-width: 350px){
+.img_scroll {
+  vertical-align: middle;
+  height:50px;
+}
 }
 .img-responsive,
 .thumbnail > img,
@@ -478,9 +491,14 @@ p {
     font-size: 22.5px;
   }
 }
-@media (min-width:300px){
+@media (min-width:350px){
   .lead {
     font-size: 22.5px;
+  }
+}
+@media (max-width:350px){
+  .lead {
+    font-size: 18px;
   }
 }
 small,
